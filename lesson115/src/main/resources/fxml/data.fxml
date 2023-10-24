@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.util.ArrayList?>
+<?import com.reine.entity.Person?>
+<?import java.util.HashMap?>
+<HashMap a="1" b="2"/>

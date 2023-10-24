@@ -1,0 +1,64 @@
+/*id选择器*/
+#root {
+    -fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 0.0%, #23d0f3ff 0.0%, #d791f9ff 50.0%, #fe7b84ff 100.0%);
+}
+
+#vbox {
+    /*-fx-border-width: 10;*/
+    -fx-border-color: #ffffcc;
+    -fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 0.0%, #00c6fdff 0.0%, #fdfc1dff 100.0%);
+}
+
+button{
+    -fx-background-color: black;
+}
+
+/*#vBoxBtn {*/
+/*    -fx-background-radius: 10;*/
+/*}*/
+
+/*#rootBtn {*/
+/*    -fx-background-radius: 10;*/
+/*}*/
+
+/*类选择器*/
+.label {
+    -fx-font-family: "Adobe Devanagari";
+    -fx-font-size: 30;
+    -fx-text-fill: linear-gradient(from 0.0% 0.0% to 100.0% 0.0%, #8139b5ff 0.0%, #fd1e1cff 50.0%, #fbaf46ff 100.0%);
+}
+
+#rootBtn:hover {
+    /*-fx-background-color: pink;*/
+}
+
+#rootBtn:focused {
+    -fx-border-color: #66cccc;
+    -fx-border-radius: 10;
+    -fx-border-width: 5;
+}
+
+/*伪类选择器*/
+.mycss {
+    -fx-background-color: #ffcc99;
+}
+
+.text-field {
+    -fx-background-color: #ffffff00;
+    /*上右下左*/
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: black;
+    -fx-padding: 0;
+}
+
+.list-view{
+    -fx-background-color: #ffffcc;
+    -fx-border-color: #ccffff;
+    -fx-border-width: 5;
+}
+.list-cell{
+    -fx-background-color: #ffffff00;
+}
+.list-cell:selected{
+    -fx-background-color: #ffcccc;
+}

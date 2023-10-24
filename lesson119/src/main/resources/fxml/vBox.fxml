@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.reine.controller.VBoxController"
+      spacing="30" fx:id="vbox">
+
+    <style>
+        -fx-background-color:#BFEFFF;
+        -fx-border-color:#CD0000;
+        -fx-border-width:10 5 0 20;
+    </style>
+
+    <Button fx:id="vBoxBtn" text="fxml button"/>
+    <Label text="fxml label"/>
+    <TextField text="fxml textField" prefWidth="100" style="-fx-text-fill: blue"/>
+    <ListView prefHeight="300">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="dataA"/>
+                <String fx:value="dataB"/>
+                <String fx:value="dataC"/>
+                <String fx:value="dataE"/>
+                <String fx:value="dataD"/>
+                <String fx:value="dataG"/>
+            </FXCollections>
+        </items>
+    </ListView>
+
+
+</VBox>

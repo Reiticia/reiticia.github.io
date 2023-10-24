@@ -1,0 +1,23 @@
+/*选中区域*/
+.chart-series-area-fill.default-color0 {
+    /*填充颜色*/
+    -fx-fill: #ffcccc55;
+}
+
+/*选中端点*/
+.chart-area-symbol.default-color0 {
+    /*端点外圈颜色，填充色*/
+    -fx-background-color: #ffffcc, #ccffff;
+}
+
+/*选中线段*/
+.chart-series-area-line.default-color0 {
+    /*线段颜色*/
+    -fx-stroke: #99cccc;
+}
+
+/*选中图示*/
+.chart-legend-symbol.default-color0 {
+    /*图示外圈颜色，填充色*/
+    -fx-background-color: #ffcc99, #ffcccc;
+}

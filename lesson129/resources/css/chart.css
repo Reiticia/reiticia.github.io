@@ -1,0 +1,16 @@
+.chart-bar.data0 {
+    -fx-bar-fill: red;
+}
+
+.chart-bar.data1 {
+    -fx-bar-fill: blue;
+}
+
+.bar-chart {
+    -fx-bar-gap: 4;
+    -fx-category-gap: 10;
+}
+
+#x {
+    -fx-tick-length: 100;
+}

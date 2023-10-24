@@ -1,0 +1,17 @@
+.chart-pie.data0 {
+    -fx-pie-color: #ffffcc;
+    -fx-background-color: #ffffcc;
+}
+
+.chart {
+    -fx-clockwise: false;
+    -fx-pie-label-visible: true;
+    -fx-label-line-length: 10;
+    -fx-start-angle: 90;
+}
+
+/*设置图示*/
+.chart-legend-item-symbol {
+    -fx-pref-width: 100;
+    -fx-pref-height: 30;
+}

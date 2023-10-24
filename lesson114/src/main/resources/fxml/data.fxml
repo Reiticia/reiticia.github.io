@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.reine.controller.Data">
+
+    <children>
+        <Label text="this is a label" AnchorPane.topAnchor="100" AnchorPane.leftAnchor="100">
+        </Label>
+        <!--几种显示文本的方法，1.标签内，2.子节点<text>xxx</text>、<String fx:value="xxx"/>、<Double fx:value="xxx"/>-->
+        <Button fx:id="button" AnchorPane.topAnchor="200" AnchorPane.leftAnchor="100" text="hello world" onAction="#showNewStage">
+        </Button>
+        <!--可以使用image属性或者Image标签-->
+        <ImageView AnchorPane.topAnchor="300" AnchorPane.leftAnchor="100">
+            <!--必须将图片/文件夹放到static目录下，使用@符号引用资源文件-->
+            <Image url="@/static/images/logo.png"/>
+        </ImageView>
+
+        <BorderPane layoutX="300" layoutY="100"
+                    style="-fx-background-color: yellow;"
+                    prefWidth="300" prefHeight="300">
+            <center>
+                <ListView fx:id="listview" prefWidth="200" prefHeight="200"/>
+            </center>
+            <bottom>
+                <ComboBox>
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="data1"/>
+                            <String fx:value="data2"/>
+                            <String fx:value="data3"/>
+                            <String fx:value="data4"/>
+                            <String fx:value="data5"/>
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+            </bottom>
+        </BorderPane>
+    </children>
+</AnchorPane>

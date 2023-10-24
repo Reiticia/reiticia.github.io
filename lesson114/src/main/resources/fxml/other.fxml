@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane xmlns="http://javafx.com/javafx">
+
+    <center>
+        <!--可以使用image属性或者Image标签-->
+        <ImageView>
+            <!--必须将图片/文件夹放到static目录下，使用@符号引用资源文件-->
+            <Image url="@/static/images/logo.png"/>
+        </ImageView>
+    </center>
+
+
+</BorderPane>
