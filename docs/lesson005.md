@@ -1,4 +1,9 @@
-### Platform类使用
+---
+lang: zh-CN
+title: Platform类使用
+---
+
+# Platform类使用
 
 ```java
 // 查看两个位置代码运行的线程
@@ -20,7 +25,7 @@ public void start(Stage primaryStage) throws Exception {
 
 以上结果表示Platform运行的线程和Application线程一致，则可以使用Platform类来更新UI界面
 
-##### 方法
+## 方法
 
 * 即使关闭窗口，程序依然执行（后台运行）`Platform.setImplicitExit(false);`
 

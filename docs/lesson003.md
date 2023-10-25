@@ -1,4 +1,9 @@
-### stage窗口
+---
+lang: zh-CN
+title: Stage窗口
+---
+
+# Stage窗口
 
 * 设置标题`primaryStage.setTitle("JavaFx");`
 
@@ -14,40 +19,40 @@
 
 * 设置和获取宽高
 
-```java
-primaryStage.setWidth(250);  
-primaryStage.setHeight(250);  
-primaryStage.setMaxHeight(500);  
-primaryStage.setMaxWidth(500);  
-primaryStage.setMinHeight(100);  
-primaryStage.setMinWidth(100);
-// 如果没用设置宽高，则以下两个方法必须在show()方法执行才能获取宽高
-primaryStage.getWidth();  
-primaryStage.getHeight();
-```
+    ```java
+    primaryStage.setWidth(250);  
+    primaryStage.setHeight(250);  
+    primaryStage.setMaxHeight(500);  
+    primaryStage.setMaxWidth(500);  
+    primaryStage.setMinHeight(100);  
+    primaryStage.setMinWidth(100);
+    // 如果没用设置宽高，则以下两个方法必须在show()方法执行才能获取宽高
+    primaryStage.getWidth();  
+    primaryStage.getHeight();
+    ```
 
 * stage1.initOwner(stage); // 设置父窗口
 
 * stage1.initModality(Modality.WINDOW_MODAL);// 设置模态窗口，该窗口没有关闭前点击stage（即父窗口）窗口无效
 
-```java
-primaryStage.heightProperty().addListener(new ChangeListener<Number>() {  
-    @Override  
-    public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) { 
-        System.out.println("高度变化了");  
-    }  
-});  
-primaryStage.widthProperty().addListener(new ChangeListener<Number>() {  
-    @Override  
-    public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {  
-        System.out.println("宽度变化了");  
-    }  
-});
-```
+    ```java
+    primaryStage.heightProperty().addListener(new ChangeListener<Number>() {  
+        @Override  
+        public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) { 
+            System.out.println("高度变化了");  
+        }  
+    });  
+    primaryStage.widthProperty().addListener(new ChangeListener<Number>() {  
+        @Override  
+        public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {  
+            System.out.println("宽度变化了");  
+        }  
+    });
+    ```
 
 * 设置全屏
   
-```java
-primaryStage.setFullScreen(true);  
-primaryStage.setScene(new Scene(new Group()));
-```
+    ```java
+    primaryStage.setFullScreen(true);  
+    primaryStage.setScene(new Scene(new Group()));
+    ```

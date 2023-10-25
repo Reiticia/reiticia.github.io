@@ -1,4 +1,11 @@
-### FX入门程序
+---
+lang: zh-CN
+title: JavaFX入门程序
+---
+
+# JavaFX入门程序
+
+[lesson001](../code/lesson001)
 
 ```java
 public class Main extends Application {
