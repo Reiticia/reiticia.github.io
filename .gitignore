@@ -8,3 +8,6 @@ out
 gen
 **/target/
 .obsidian
+node_modules/
+.temp/
+.cache/
