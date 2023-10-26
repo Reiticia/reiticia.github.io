@@ -1,7 +1,15 @@
-### Translate位移
+---
+lang: zh-CN
+title: Translate位移
+---
+
+
+# Translate位移
 
 * 创建位移量`Translate translate = new Translate(100, 100);`
+
 * xy位移取相反数`translate.createInverse()`
+
 * 在该位移基础上再位移，转换为point2D
   
   ```java
@@ -10,6 +18,7 @@
   ```
   
   > point2D(150.00,150.00)
+
 * 通过传入的数据，直接转换为point2D
   
   ```java
@@ -18,11 +27,13 @@
   ```
   
   > point2D1(100.00,100.00)
+
 * 位移会叠加，位移原点(LayoutX,LayoutY)
   
   ```java
   button2.getTransforms().addAll(translate, translate1);
   ```
+  
 * 获取偏移量
   
   ```java

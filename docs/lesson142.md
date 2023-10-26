@@ -1,4 +1,10 @@
-### Color
+---
+lang: zh-CN
+title: Color
+---
+
+
+# Color
 
 获取颜色的几种方法
 

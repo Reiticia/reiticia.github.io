@@ -1,4 +1,10 @@
-### fxml自定义标签（Builder和BuilderFactory）
+---
+lang: zh-CN
+title: fxml自定义标签（Builder和BuilderFactory）
+---
+
+
+# fxml自定义标签（Builder和BuilderFactory）
 
 * 通用的Person实体类
   
@@ -13,7 +19,8 @@
   }
   ```
   
-  #### 第一种方式，普通对象
+## 第一种方式，普通对象
+
 1. Builder类
   
    ```java
@@ -81,7 +88,7 @@
     }
     ```
 
-#### 第二种方式，Map对象
+## 第二种方式，Map对象
 
 1. Builder类
   

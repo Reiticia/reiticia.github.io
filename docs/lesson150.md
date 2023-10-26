@@ -1,4 +1,10 @@
-### GaussianBlur高斯模糊
+---
+lang: zh-CN
+title: GaussianBlur高斯模糊
+---
+
+
+# GaussianBlur高斯模糊
 
 * 创建高斯模糊`GaussianBlur gaussianBlur = new GaussianBlur();`
 

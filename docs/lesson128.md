@@ -1,4 +1,10 @@
-### BarChart柱状图
+---
+lang: zh-CN
+title: BarChart柱状图
+---
+
+
+# BarChart柱状图
 
 ```java
 /**  

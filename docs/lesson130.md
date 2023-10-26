@@ -1,4 +1,10 @@
-### LineChart折线图
+---
+lang: zh-CN
+title: LineChart折线图
+---
+
+
+# LineChart折线图
 
 * 填充数据
   

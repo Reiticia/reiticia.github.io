@@ -1,4 +1,9 @@
-### WebView
+---
+lang: zh-CN
+title: WebView
+---
+
+# WebView
 
 * 创建WebView`WebView webView = new WebView();`
 
@@ -12,17 +17,16 @@
 
 * 加载HTML文本
   
-```java
-String html = "<html>" +  
-      "<head>" +  
-      "<title>JavaFX WebView</title>" +  
-      "</head>" +  
-      "<body>" +  
-      "<h1>Hello World</h1>" +  
-      "</body>" +  
-      "</html>";  
-engine.loadContent(html, "text/html");
-```
-
+    ```java
+    String html = "<html>" +  
+          "<head>" +  
+          "<title>JavaFX WebView</title>" +  
+          "</head>" +  
+          "<body>" +  
+          "<h1>Hello World</h1>" +  
+          "</body>" +  
+          "</html>";  
+    engine.loadContent(html, "text/html");
+    ```
 
 ![](../assets/Pasted%20image%2020220615074255.png)

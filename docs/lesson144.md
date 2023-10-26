@@ -1,4 +1,10 @@
-### LinearGradient线性渐变
+---
+lang: zh-CN
+title: LinearGradient线性渐变
+---
+
+
+# LinearGradient线性渐变
 
 ```java
 List<Paint> list = new ArrayList<>();  

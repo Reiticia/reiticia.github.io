@@ -1,4 +1,9 @@
-### TreeView自定义Cell
+---
+lang: zh-CN
+title: TreeView自定义Cell
+---
+
+# TreeView自定义Cell
 
 1. 准备数据
   
@@ -25,6 +30,7 @@
    china.getChildren().addAll(hlj, gd, tw);  
    treeView.setRoot(china);
    ```
+   
 2. 设置可编辑`treeView.setEditable(true);`
 
 3. 自定义行

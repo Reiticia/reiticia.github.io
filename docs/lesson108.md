@@ -1,4 +1,9 @@
-### TreeTableView自定义单元格
+---
+lang: zh-CN
+title: TreeTableView自定义单元格
+---
+
+# TreeTableView自定义单元格
 
 1. 实体类
   
@@ -71,6 +76,7 @@
        }  
    }
    ```
+   
 2. 自定义名称列的展示和修改
   
    ```java
@@ -108,10 +114,10 @@
                    initGraphic();  
                }  
                /**  
-             * 这里在进行数据更新时，必须在实体类中的nameProperty返回SimpleStringProperty对象，</n>  
-             * 否则下次双击编辑时会显示上一次编辑前的值  
-             * @param newValue  
-             */  
+                * 这里在进行数据更新时，必须在实体类中的nameProperty返回SimpleStringProperty对象，</n>  
+                * 否则下次双击编辑时会显示上一次编辑前的值  
+                * @param newValue  
+                */  
                @Override  
                public void commitEdit(String newValue) {  
                    super.commitEdit(newValue);  

@@ -1,4 +1,9 @@
-### TableView5中内置的TableCell
+---
+lang: zh-CN
+title: TableView5中内置的TableCell
+---
+
+# TableView5中内置的TableCell
 
 * 设置列排列方式`tableView.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);`
 
@@ -98,7 +103,8 @@
   效果图
   ![](../assets/Pasted%20image%2020220606162749.png)
   
-  #### 使用定时任务使进度条（ProgressBarTableCell）加载
+## 使用定时任务使进度条（ProgressBarTableCell）加载
+
 1. 自定义定时任务类
   
    ```java

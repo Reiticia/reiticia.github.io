@@ -1,4 +1,9 @@
-### 通过反射创建Node
+---
+lang: zh-CN
+title: 通过反射创建Node
+---
+
+# 通过反射创建Node
 
 1. 获取类`Class<?> classType = Class.forName("javafx.scene.control.Button")`
 

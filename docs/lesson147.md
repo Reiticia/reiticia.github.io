@@ -1,4 +1,10 @@
-### InnerShadow内投影效果
+---
+lang: zh-CN
+title: InnerShadow内投影效果
+---
+
+
+# InnerShadow内投影效果
 
 * 创建内投影`InnerShadow innerShadow = new InnerShadow();`
 

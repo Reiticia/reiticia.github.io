@@ -1,4 +1,9 @@
-### TableView合并列和加载Map类型数据
+---
+lang: zh-CN
+title: TableView合并列和加载Map类型数据
+---
+
+# TableView合并列和加载Map类型数据
 
 * 合并列
   
@@ -45,4 +50,4 @@
   tableView1.getColumns().addAll(nameCol1, ageCol1, isBoyCol1);
   ```
 
-![](../assets/Pasted%20image%2020220606075259.png)
+  ![](../assets/Pasted%20image%2020220606075259.png)

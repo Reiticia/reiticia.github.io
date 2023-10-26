@@ -1,6 +1,11 @@
-### 其他弹窗
+---
+lang: zh-CN
+title: 其他弹窗
+---
 
-#### ChoiceDialog下拉列表弹窗
+# 其他弹窗
+
+## ChoiceDialog下拉列表弹窗
 
 ```java
 ObservableList<String > list = FXCollections.observableArrayList();  
@@ -22,7 +27,7 @@ dialog.show();
 
 ![](../assets/Pasted%20image%2020220605171311.png)
 
-#### TextInputDialog输入框弹窗
+## TextInputDialog输入框弹窗
 
 ```java
 TextInputDialog dialog = new TextInputDialog("输入框弹窗");  
@@ -35,7 +40,7 @@ ok.setOnAction(event1 -> {
 
 ![](../assets/Pasted%20image%2020220605171326.png)
 
-#### 自定义弹窗
+## 自定义弹窗
 
 ```java
 Stage stage = new Stage();  

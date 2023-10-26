@@ -1,4 +1,10 @@
-### StackedBarChart堆积柱状图
+---
+lang: zh-CN
+title: StackedBarChart堆积柱状图
+---
+
+
+# StackedBarChart堆积柱状图
 
 * 填充数据
   
@@ -29,6 +35,7 @@
   
   效果图
   ![](../assets/Pasted%20image%2020220614110642.png)
+
 * css
   
   ```css

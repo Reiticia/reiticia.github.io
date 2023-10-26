@@ -1,4 +1,9 @@
-### TreeTableView
+---
+lang: zh-CN
+title: TreeTableView
+---
+
+# TreeTableView
 
 1. 装填数据
   
@@ -24,6 +29,7 @@
    item2.setExpanded(true);  
    item3.setExpanded(true);
    ```
+   
 2. 设置TreeTableView
   
    ```java
@@ -39,6 +45,7 @@
    // 设置单元格可选中  
    view.getSelectionModel().setCellSelectionEnabled(true);
    ```
+   
 3. 设置列
   
    ```java
@@ -51,6 +58,7 @@
    // 加载列  
    view.getColumns().addAll(nameCol, ageCol, maleCol);
    ```
+   
 4. 事件监听
   
    ```java

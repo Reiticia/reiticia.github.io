@@ -1,4 +1,10 @@
-### AreaChart区域图
+---
+lang: zh-CN
+title: AreaChart区域图
+---
+
+
+# AreaChart区域图
 
 * 填充数据
   

@@ -1,4 +1,10 @@
-### ScatterChart散点图
+---
+lang: zh-CN
+title: ScatterChart散点图
+---
+
+
+# ScatterChart散点图
 
 * 填充数据
   

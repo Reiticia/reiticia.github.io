@@ -1,4 +1,9 @@
-### TreeView自定义Cell拖拽
+---
+lang: zh-CN
+title: TreeView自定义Cell拖拽
+---
+
+# TreeView自定义Cell拖拽
 
 ```java
 treeView.setCellFactory(new Callback<TreeView<String>, TreeCell<String>>() {  

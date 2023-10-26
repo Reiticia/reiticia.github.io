@@ -1,4 +1,10 @@
-### PieChart饼状图
+---
+lang: zh-CN
+title: PieChart饼状图
+---
+
+
+# PieChart饼状图
 
 * 创建饼状图
   
@@ -73,5 +79,3 @@
       -fx-pref-height: 30;  
   }
   ```
-
-```

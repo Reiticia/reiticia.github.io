@@ -1,13 +1,22 @@
-### TableView列宽与排序
+---
+lang: zh-CN
+title: TableView列宽与排序
+---
 
-#### 列宽
+
+# TableView列宽与排序
+
+## 列宽
 
 * 设置每列宽度相同（列拉长时挤占空间）`tableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);`
+
 * 限制用户无法改变列宽度`tableView.setColumnResizePolicy(param -> true);`
   
-  #### 排序
+## 排序
 * 是否允许排序（不允许）`nameCol.setSortable(false);`
+
 * 排序优先级`tableView.getSortOrder().addAll(nameCol, ageCol, scoreCol, isBoyCol);`
+
 * 自定义排序
   
   ```java
@@ -34,6 +43,7 @@
       }  
   });
   ```
+  
 * 单独定义某列，升序
   
   ```java
@@ -42,6 +52,7 @@
       return s1.compareTo(s2);  
   }));
   ```
+  
 * 点击按钮进行排序
   
   ```java

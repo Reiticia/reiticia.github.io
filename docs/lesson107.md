@@ -1,4 +1,9 @@
-### TreeTableView五种内置Cell
+---
+lang: zh-CN
+title: TreeTableView五种内置Cell
+---
+
+# TreeTableView五种内置Cell
 
 1. 实体类定义
   
@@ -77,6 +82,7 @@
        }  
    }
    ```
+   
 2. TreeTableColumn设置
   
    ```java
@@ -93,6 +99,7 @@
    // 加载列  
    view.getColumns().addAll(nameCol, clazzCol, ageCol, scoreCol, maleCol);
    ```
+   
 3. 内置的五种TreeTableCell
   
    ```java

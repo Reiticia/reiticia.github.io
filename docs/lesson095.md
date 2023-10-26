@@ -1,4 +1,10 @@
-### TableView选择模式与监听
+---
+lang: zh-CN
+title: TableView选择模式与监听
+---
+
+
+# TableView选择模式与监听
 
 * 设置选择性显示或隐藏某列`tableView.setTableMenuButtonVisible(true);`
 

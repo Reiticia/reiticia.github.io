@@ -1,4 +1,10 @@
-### RadialGradient径向渐变
+---
+lang: zh-CN
+title: RadialGradient径向渐变
+---
+
+
+# RadialGradient径向渐变
 
 ```java
 List<Stop> stops = new ArrayList<>();  

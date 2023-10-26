@@ -1,6 +1,12 @@
-### TableView
+---
+lang: zh-CN
+title: TableView
+---
 
-#### TableView加载普通JavaBean
+
+# TableView
+
+## TableView加载普通JavaBean
 
 1. 定义普通学生实体类
   
@@ -113,7 +119,7 @@
    另一种写法
    
    ```java
-   第二种写法，通过加载属性名称进行加载，内部通过反射调用属性列的getter方法，因此getter方法编写必须符合规范  
+   // 第二种写法，通过加载属性名称进行加载，内部通过反射调用属性列的getter方法，因此getter方法编写必须符合规范  
    TableColumn<Student, String> nameCol = new TableColumn<>("姓名");  
    nameCol.setCellValueFactory(new PropertyValueFactory<>("name"));  
    // 对于数字类型的字段，可以指定其抽象类Number或者它本身所属的类作为泛型  
@@ -161,9 +167,9 @@
    });
    ```
    
-   #### TableView加载监视JavaBean
+## TableView加载监视JavaBean
 
-7. 定义监视学生实体类
+1. 定义监视学生实体类
   
    ```java
    public class StudentProperty {  
@@ -233,7 +239,7 @@
    }
    ```
 
-8. 创建学生对象，填充可观察列表
+2. 创建学生对象，填充可观察列表
   
    ```java
    // 创建5个学生对象  
@@ -246,7 +252,7 @@
    list.addAll(student1, student2, student3, student4, student5);
    ```
 
-9. 传入list创建TableView
+3. 传入list创建TableView
   
    ```java
    TableView<Student> tableView = new TableView<>(list);  
@@ -254,112 +260,112 @@
    tableView.setLayoutY(100);
    ```
 
-10. 构建tableView的每一列数据
+4. 构建tableView的每一列数据
   
-    ```java
-    TableColumn<StudentProperty, String> nameCol = new TableColumn<>("姓名");  
-    nameCol.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<StudentProperty, String>, ObservableValue<String>>() {  
-        @Override  
-        public ObservableValue<String> call(TableColumn.CellDataFeatures<StudentProperty, String> cellData) {  
-            return cellData.getValue().nameProperty();  
-        }  
-    });  
-    // 对于数字类型的字段必须，必须使用其抽象类Number定义泛型  
-    TableColumn<StudentProperty, Number> ageCol = new TableColumn<>("年龄");  
-    ageCol.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<StudentProperty, Number>, ObservableValue<Number>>() {  
-        @Override  
-        public ObservableValue<Number> call(TableColumn.CellDataFeatures<StudentProperty, Number> cellData) {  
-            return cellData.getValue().ageProperty();  
-        }  
-    });  
-    TableColumn<StudentProperty, Number> scoreCol = new TableColumn<>("成绩");  
-    scoreCol.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<StudentProperty, Number>, ObservableValue<Number>>() {  
-        @Override  
-        public ObservableValue<Number> call(TableColumn.CellDataFeatures<StudentProperty, Number> cellData) {  
-            return cellData.getValue().scoreProperty();  
-        }  
-    });  
-    TableColumn<StudentProperty, Boolean> isBoyCol = new TableColumn<>("是男生");  
-    isBoyCol.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<StudentProperty, Boolean>, ObservableValue<Boolean>>() {  
-        @Override  
-        public ObservableValue<Boolean> call(TableColumn.CellDataFeatures<StudentProperty, Boolean> cellData) {  
-            return cellData.getValue().genderProperty();  
-        }  
-    });
-    ```
+   ```java
+   TableColumn<StudentProperty, String> nameCol = new TableColumn<>("姓名");  
+   nameCol.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<StudentProperty, String>, ObservableValue<String>>() {  
+       @Override  
+       public ObservableValue<String> call(TableColumn.CellDataFeatures<StudentProperty, String> cellData) {  
+           return cellData.getValue().nameProperty();  
+       }  
+   });  
+   // 对于数字类型的字段必须，必须使用其抽象类Number定义泛型  
+   TableColumn<StudentProperty, Number> ageCol = new TableColumn<>("年龄");  
+   ageCol.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<StudentProperty, Number>, ObservableValue<Number>>() {  
+       @Override  
+       public ObservableValue<Number> call(TableColumn.CellDataFeatures<StudentProperty, Number> cellData) {  
+           return cellData.getValue().ageProperty();  
+       }  
+   });  
+   TableColumn<StudentProperty, Number> scoreCol = new TableColumn<>("成绩");  
+   scoreCol.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<StudentProperty, Number>, ObservableValue<Number>>() {  
+       @Override  
+       public ObservableValue<Number> call(TableColumn.CellDataFeatures<StudentProperty, Number> cellData) {  
+           return cellData.getValue().scoreProperty();  
+       }  
+   });  
+   TableColumn<StudentProperty, Boolean> isBoyCol = new TableColumn<>("是男生");  
+   isBoyCol.setCellValueFactory(new Callback<TableColumn.CellDataFeatures<StudentProperty, Boolean>, ObservableValue<Boolean>>() {  
+       @Override  
+       public ObservableValue<Boolean> call(TableColumn.CellDataFeatures<StudentProperty, Boolean> cellData) {  
+           return cellData.getValue().genderProperty();  
+       }  
+   });
+   ```
     
-    另一种写法
+   另一种写法
     
-    ```java
-    // 注意监视对象获取监视属性的写法为xxxProperty()，否则无法监听数据变化同时更新界面
-    TableColumn<StudentProperty, String> nameCol = new TableColumn<>("姓名");  
-    nameCol.setCellValueFactory(new PropertyValueFactory<>("name"));  
-    // 对于数字类型的字段，可以指定其抽象类Number或者它本身所属的类作为泛型  
-    // TableColumn<StudentProperty, Number> ageCol = new TableColumn<>("年龄");  
-    // ageCol.setCellValueFactory(new PropertyValueFactory<>("age"));  
-    // TableColumn<StudentProperty, Number> scoreCol = new TableColumn<>("成绩");  
-    // scoreCol.setCellValueFactory(new PropertyValueFactory<>("score"));  
-    TableColumn<StudentProperty, Integer> ageCol = new TableColumn<>("年龄");  
-    ageCol.setCellValueFactory(new PropertyValueFactory<>("age"));  
-    TableColumn<StudentProperty, Double> scoreCol = new TableColumn<>("成绩");  
-    scoreCol.setCellValueFactory(new PropertyValueFactory<>("score"));  
-    // 注意Boolean监视属性getter的写法为isXXX
-    TableColumn<StudentProperty, Boolean> isBoyCol = new TableColumn<>("是男生");  
-    isBoyCol.setCellValueFactory(new PropertyValueFactory<>("gender"));
-    ```
+   ```java
+   // 注意监视对象获取监视属性的写法为xxxProperty()，否则无法监听数据变化同时更新界面
+   TableColumn<StudentProperty, String> nameCol = new TableColumn<>("姓名");  
+   nameCol.setCellValueFactory(new PropertyValueFactory<>("name"));  
+   // 对于数字类型的字段，可以指定其抽象类Number或者它本身所属的类作为泛型  
+   // TableColumn<StudentProperty, Number> ageCol = new TableColumn<>("年龄");  
+   // ageCol.setCellValueFactory(new PropertyValueFactory<>("age"));  
+   // TableColumn<StudentProperty, Number> scoreCol = new TableColumn<>("成绩");  
+   // scoreCol.setCellValueFactory(new PropertyValueFactory<>("score"));  
+   TableColumn<StudentProperty, Integer> ageCol = new TableColumn<>("年龄");  
+   ageCol.setCellValueFactory(new PropertyValueFactory<>("age"));  
+   TableColumn<StudentProperty, Double> scoreCol = new TableColumn<>("成绩");  
+   scoreCol.setCellValueFactory(new PropertyValueFactory<>("score"));  
+   // 注意Boolean监视属性getter的写法为isXXX
+   TableColumn<StudentProperty, Boolean> isBoyCol = new TableColumn<>("是男生");  
+   isBoyCol.setCellValueFactory(new PropertyValueFactory<>("gender"));
+   ```
 
-11. 给tableView添加列
+5. 给tableView添加列
   
-    ```java
-    tableView.getColumns().add(nameCol);  
-    tableView.getColumns().add(ageCol);  
-    tableView.getColumns().add(scoreCol);  
-    tableView.getColumns().add(isBoyCol);
-    ```
+   ```java
+   tableView.getColumns().add(nameCol);  
+   tableView.getColumns().add(ageCol);  
+   tableView.getColumns().add(scoreCol);  
+   tableView.getColumns().add(isBoyCol);
+   ```
     
-    ![](../assets/Pasted%20image%2020220605211922.png)
+   ![](../assets/Pasted%20image%2020220605211922.png)
 
-12. 用于测试的按钮点击事件
+6. 用于测试的按钮点击事件
   
-    ```java
-    button.setOnAction(event -> {  
-        if (tableView.getItems().size() > 0) {  
-            // 成功修改并显示到界面  
-            // tableView.getItems().set(3, new StudentProperty("REINE", 20, 80.0, true));  
-            // 成功修改并显示到界面  
-            student1.setName("REINE");  
-            // 成功修改并显示到界面  
-            student2.setAge(14);  
-            // 可以得知list中对于的数据也被修改了
-            list.forEach(System.out::println);
-        } else {          
-            Alert alert = new Alert(Alert.AlertType.ERROR);  
-            alert.setHeaderText("没有数据");  
-            alert.show(); 
-        }  
-    });
-    ```
+   ```java
+   button.setOnAction(event -> {  
+       if (tableView.getItems().size() > 0) {  
+           // 成功修改并显示到界面  
+           // tableView.getItems().set(3, new StudentProperty("REINE", 20, 80.0, true));  
+           // 成功修改并显示到界面  
+           student1.setName("REINE");  
+           // 成功修改并显示到界面  
+           student2.setAge(14);  
+           // 可以得知list中对于的数据也被修改了
+           list.forEach(System.out::println);
+       } else {          
+           Alert alert = new Alert(Alert.AlertType.ERROR);  
+           alert.setHeaderText("没有数据");  
+           alert.show(); 
+       }  
+   });
+   ```
 
-13. 当tableView中的数据发生改变时，可观察列表list是否能监听到其数据发生的变化
+7. 当tableView中的数据发生改变时，可观察列表list是否能监听到其数据发生的变化
   
-    ```java
-    // 对list的某一条数据进行修改时不会触发该监听，除非在创建list时传入了回调函数callback，且修改的属性在callback返回的监视属性数组中才会触发该监听
-    list.addListener(new ListChangeListener<StudentProperty>() {  
-        @Override  
-        public void onChanged(Change<? extends StudentProperty> c) {  
-            System.out.println("c = " + c);  
-        }  
-    });
-    ```
+   ```java
+   // 对list的某一条数据进行修改时不会触发该监听，除非在创建list时传入了回调函数callback，且修改的属性在callback返回的监视属性数组中才会触发该监听
+   list.addListener(new ListChangeListener<StudentProperty>() {  
+       @Override  
+       public void onChanged(Change<? extends StudentProperty> c) {  
+           System.out.println("c = " + c);  
+       }  
+   });
+   ```
 
-14. 相对于第七点提出的通过传入回调函数callback创建可观察列表的写法
+8. 相对于第七点提出的通过传入回调函数callback创建可观察列表的写法
   
-    ```java
-    ObservableList<StudentProperty> list = FXCollections.observableArrayList(new Callback<StudentProperty, Observable[]>() {  
-        @Override  
-        public Observable[] call(StudentProperty param) {  
-            // 将每个StudentProperty对象中所有的监视属性返回
-            return new Observable[]{param.nameProperty(),param.ageProperty(),param.scoreProperty(),param.genderProperty()};  
-        }  
-    });
-    ```
+   ```java
+   ObservableList<StudentProperty> list = FXCollections.observableArrayList(new Callback<StudentProperty, Observable[]>() {  
+       @Override  
+       public Observable[] call(StudentProperty param) {  
+           // 将每个StudentProperty对象中所有的监视属性返回
+           return new Observable[]{param.nameProperty(),param.ageProperty(),param.scoreProperty(),param.genderProperty()};  
+       }  
+   });
+   ```

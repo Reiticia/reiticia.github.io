@@ -1,4 +1,9 @@
-### fxml国际化
+---
+lang: zh-CN
+title: fxml国际化
+---
+
+# fxml国际化
 
 * 获取默认地区`Locale.getDefault()`
 
@@ -6,7 +11,8 @@
 
 * 手动设置国家和语言`Locale.setDefault(new Locale("en", "US"));`
   
-  #### fxml国际化
+## fxml国际化
+
 1. 加载fxml
    
    ```java
@@ -42,38 +48,34 @@
 
 3. fxml文件
 
-```xml
-<?xml version="1.0" encoding="UTF-8"?>  
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextField?>  
-<?import javafx.scene.layout.AnchorPane?>  
-<?import javafx.scene.layout.HBox?>  
-<AnchorPane xmlns="http://javafx.com/javafx"  
-            xmlns:fx="http://javafx.com/fxml"  
-            fx:controller="com.reine.controller.SampleController"  
-            prefHeight="400.0" prefWidth="600.0">  
-    <HBox spacing="10">  
-        <Button text="%value"/>  
-        <TextField text="%value2" />  
-    </HBox>  
-
-</AnchorPane>
-```
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>  
+   <?import javafx.scene.control.Button?>
+   <?import javafx.scene.control.TextField?>  
+   <?import javafx.scene.layout.AnchorPane?>  
+   <?import javafx.scene.layout.HBox?>  
+   <AnchorPane xmlns="http://javafx.com/javafx"  
+               xmlns:fx="http://javafx.com/fxml"  
+               fx:controller="com.reine.controller.SampleController"  
+               prefHeight="400.0" prefWidth="600.0">  
+       <HBox spacing="10">  
+           <Button text="%value"/>  
+           <TextField text="%value2" />  
+       </HBox>  
+   
+   </AnchorPane>
+   ```
 
 4. 控制器
 
-```java
-public class SampleController implements Initializable {
-
-    @Override  
-    public void initialize(URL location, ResourceBundle resources) {  
-        System.out.println(location.getPath());  
-        System.out.println(resources);  
-    }  
-
-}
-```
-
-```
-
-```
+   ```java
+   public class SampleController implements Initializable {
+   
+       @Override  
+       public void initialize(URL location, ResourceBundle resources) {  
+           System.out.println(location.getPath());  
+           System.out.println(resources);  
+       }  
+   
+   }
+   ```

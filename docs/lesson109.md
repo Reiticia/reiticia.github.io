@@ -1,4 +1,9 @@
-### 多任务Task
+---
+lang: zh-CN
+title: 多任务Task
+---
+
+# 多任务Task
 
 * 查看当前线程是否为JavaFx的UI线程`Platform.isFxApplicationThread()`
 

@@ -1,4 +1,10 @@
-### ImagePattern
+---
+lang: zh-CN
+title: ImagePattern
+---
+
+
+# ImagePattern
 
 ```java
 // 第一种方式，直接加载图片，会将图片缩放为当前区域的宽高

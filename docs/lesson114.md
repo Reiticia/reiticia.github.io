@@ -1,4 +1,10 @@
-### fxml切换窗口
+---
+lang: zh-CN
+title: fxml切换窗口
+---
+
+
+# fxml切换窗口
 
 1. 进入窗口
 

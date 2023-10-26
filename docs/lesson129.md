@@ -1,4 +1,10 @@
-### BarChart柱状图基本设置
+---
+lang: zh-CN
+title: BarChart柱状图基本设置
+---
+
+
+# BarChart柱状图基本设置
 
 * 数据填充
   

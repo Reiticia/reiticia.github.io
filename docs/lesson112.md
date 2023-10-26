@@ -1,4 +1,10 @@
-### fxml基本编写
+---
+lang: zh-CN
+title: fxml基本编写
+---
+
+
+# fxml基本编写
 
 1. myfxml.fxml文件
 

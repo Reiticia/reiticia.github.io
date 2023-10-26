@@ -1,17 +1,23 @@
-### TreeView四种内置TreeCell
+---
+lang: zh-CN
+title: TreeView四种内置TreeCell
+---
+
+# TreeView四种内置TreeCell
 
 * 设置可编辑`treeView.setEditable(true);`
   
-#### TextFieldTreeCell
+## TextFieldTreeCell
 * 使用`treeView.setCellFactory(TextFieldTreeCell.forTreeView());`
   
-#### ComboBoxTreeCell
+## ComboBoxTreeCell
 * 使用`treeView.setCellFactory(ComboBoxTreeCell.forTreeView(new String[]{"中国", "韩国", "日本"}));`
   
-#### ChoiceBoxTreeCell
+## ChoiceBoxTreeCell
 * 使用`treeView.setCellFactory(ChoiceBoxTreeCell.forTreeView(new String[]{"中国", "韩国", "日本"}));`
   
-#### CheckBoxTreeCell（不需要设置可编辑即可修改选中）
+## CheckBoxTreeCell（不需要设置可编辑即可修改选中）
+
 1. 定义Property实体类
   
    ```java

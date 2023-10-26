@@ -1,4 +1,10 @@
-### fxml的Controller
+---
+lang: zh-CN
+title: fxml的Controller
+---
+
+
+# fxml的Controller
 
 1. fxml文件
   
