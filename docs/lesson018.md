@@ -1,25 +1,31 @@
-#### GridPane网格布局
+---
+lang: zh-CN
+title: GridPane网格布局
+---
+
+
+# GridPane网格布局
 
 * 创建网格布局
   
-```java
-Button[] buttons = new Button[8];  
-for (int i = 0; i < buttons.length; i++) {  
-    buttons[i] = new Button("Button " + i);  
-}  
-// 创建网格布局  
-GridPane gridPane = new GridPane();  
-gridPane.setStyle("-fx-background-color: #336699;");  
-// 设置按钮在布局中的位置，第一个参数表示行，第二个参数表示列  
-gridPane.add(buttons[0], 0, 0);  
-gridPane.add(buttons[1], 1, 0);  
-gridPane.add(buttons[2], 0, 1);  
-gridPane.add(buttons[3], 1, 1);  
-gridPane.add(buttons[4], 0, 2);  
-gridPane.add(buttons[5], 1, 2);  
-gridPane.add(buttons[6], 0, 3);  
-gridPane.add(buttons[7], 1, 3);
-```
+    ```java
+    Button[] buttons = new Button[8];  
+    for (int i = 0; i < buttons.length; i++) {  
+        buttons[i] = new Button("Button " + i);  
+    }  
+    // 创建网格布局  
+    GridPane gridPane = new GridPane();  
+    gridPane.setStyle("-fx-background-color: #336699;");  
+    // 设置按钮在布局中的位置，第一个参数表示行，第二个参数表示列  
+    gridPane.add(buttons[0], 0, 0);  
+    gridPane.add(buttons[1], 1, 0);  
+    gridPane.add(buttons[2], 0, 1);  
+    gridPane.add(buttons[3], 1, 1);  
+    gridPane.add(buttons[4], 0, 2);  
+    gridPane.add(buttons[5], 1, 2);  
+    gridPane.add(buttons[6], 0, 3);  
+    gridPane.add(buttons[7], 1, 3);
+    ```
 
 * 设置组件间水平间距`gridPane.setHgap(10.0);`
 

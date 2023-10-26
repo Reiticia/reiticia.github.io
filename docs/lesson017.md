@@ -1,18 +1,24 @@
-### FlowPane流式布局
+---
+lang: zh-CN
+title: FlowPane流式布局
+---
+
+
+# FlowPane流式布局
 
 * 创建流式布局
   
-```java
-// 创建8个按钮  
-Button[] buttons = new Button[8];  
-for (int i = 0; i < buttons.length; i++) {  
-    buttons[i] = new Button("Button " + i);  
-}  
-// 创建流式布局  
-FlowPane flowPane = new FlowPane();  
-flowPane.setStyle("-fx-background-color: #336699;");  
-flowPane.getChildren().addAll(buttons);
-```
+    ```java
+    // 创建8个按钮  
+    Button[] buttons = new Button[8];  
+    for (int i = 0; i < buttons.length; i++) {  
+        buttons[i] = new Button("Button " + i);  
+    }  
+    // 创建流式布局  
+    FlowPane flowPane = new FlowPane();  
+    flowPane.setStyle("-fx-background-color: #336699;");  
+    flowPane.getChildren().addAll(buttons);
+    ```
 
 * 设置垂直流式布局（默认为水平流式布局）`flowPane.setOrientation(Orientation.VERTICAL);`
 
