@@ -1,11 +1,16 @@
-### ComboBox下拉列表
+---
+lang: zh-CN
+title: ComboBox下拉列表
+---
+
+# ComboBox下拉列表
 
 * 创建下拉列表
   
-```java
-ComboBox<String> comboBox = new ComboBox<>();  
-comboBox.getItems().addAll("str1","str2","str3","str4","str5");
-```
+   ```java
+   ComboBox<String> comboBox = new ComboBox<>();  
+   comboBox.getItems().addAll("str1","str2","str3","str4","str5");
+   ```
 
 * 设置可编辑==相较于ChoiceBox的特点==`comboBox.setEditable(true);`
 
@@ -17,21 +22,21 @@ comboBox.getItems().addAll("str1","str2","str3","str4","str5");
 
 * 选项改变监听事件
   
-```java
-comboBox.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {  
-    System.out.println(newValue);  
-});
-```
+   ```java
+   comboBox.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {  
+       System.out.println(newValue);  
+   });
+   ```
 
 * 单击事件
-  
-```java
-comboBox.setOnAction(event -> {  
-    System.out.println(comboBox.getValue());  
-});
-```
+     
+   ```java
+   comboBox.setOnAction(event -> {  
+       System.out.println(comboBox.getValue());  
+   });
+   ```
 
-#### 案例
+## 案例
 1. 实体类
   
     ```java

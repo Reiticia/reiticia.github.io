@@ -1,4 +1,10 @@
-### 单向绑定和双向绑定
+---
+lang: zh-CN
+title: 单向绑定和双向绑定
+---
+
+
+# 单向绑定和双向绑定
 
 初始化两个监视属性
 
@@ -7,74 +13,74 @@ SimpleIntegerProperty x = new SimpleIntegerProperty(1);
 SimpleIntegerProperty y = new SimpleIntegerProperty(5);
 ```
 
-#### 单向绑定
+## 单向绑定
 
 * x绑定y，绑定后x的数据会更新为y的数据`x.bind(y);`
   
-```java
-System.out.println("x.get() = " + x.get());  
-System.out.println("y.get() = " + y.get());
-```
+   ```java
+   System.out.println("x.get() = " + x.get());  
+   System.out.println("y.get() = " + y.get());
+   ```
+   
+   > x.get() = 5  
+   > y.get() = 5
 
-> x.get() = 5  
-> y.get() = 5
-
-```java
-y.set(10);  
-System.out.println("x.get() = " + x.get());
-```
-
-> x.get() = 10
-
-```java
-x.set(9);
-```
-
-> java.lang.RuntimeException: A bound value cannot be set.
-
-```java
-// 判断是否被禁止修改值
-System.out.println("x.isBound() = " + x.isBound());  
-System.out.println("y.isBound() = " + y.isBound());
-```
-
-> x.isBound() = true  
-> y.isBound() = false
-
-* 解绑`x.unbind();`
+   ```java
+   y.set(10);  
+   System.out.println("x.get() = " + x.get());
+   ```
+   
+   > x.get() = 10
+   
+   ```java
+   x.set(9);
+   ```
+   
+   > java.lang.RuntimeException: A bound value cannot be set.
+   
+   ```java
+   // 判断是否被禁止修改值
+   System.out.println("x.isBound() = " + x.isBound());  
+   System.out.println("y.isBound() = " + y.isBound());
+   ```
+   
+   > x.isBound() = true  
+   > y.isBound() = false
+   
+   * 解绑`x.unbind();`
   
-#### 双向绑定
+## 双向绑定
 
 * x双向绑定y，绑定后x的数据会更新为y的数据`x.bindBidirectional(y);`
-  
-```java
-System.out.println("x.get() = " + x.get());  
-System.out.println("y.get() = " + y.get());
-```
-
-> x.get() = 5
-> y.get() = 5
-
-```java
-x.set(30);  
-System.out.println("x.get() = " + x.get());  
-System.out.println("y.get() = " + y.get());
-```
-
-> x.get() = 30
-> y.get() = 30
-
-```java
-System.out.println("x.isBound() = " + x.isBound());  
-System.out.println("y.isBound() = " + y.isBound());
-```
-
-> x.isBound() = false
-> y.isBound() = false
+     
+   ```java
+   System.out.println("x.get() = " + x.get());  
+   System.out.println("y.get() = " + y.get());
+   ```
+   
+   > x.get() = 5
+   > y.get() = 5
+   
+   ```java
+   x.set(30);  
+   System.out.println("x.get() = " + x.get());  
+   System.out.println("y.get() = " + y.get());
+   ```
+   
+   > x.get() = 30
+   > y.get() = 30
+   
+   ```java
+   System.out.println("x.isBound() = " + x.isBound());  
+   System.out.println("y.isBound() = " + y.isBound());
+   ```
+   
+   > x.isBound() = false
+   > y.isBound() = false
 
 * 解绑`x.unbindBidirectional(y);`或`y.unbindBidirectional(x);`
   
-#### 案例
+## 案例
 1. 单向绑定实现按钮大小随界面大小改变而改变==使用prefWidthProperty，而不是widthProperty==
   
    ```java

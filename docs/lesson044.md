@@ -1,4 +1,10 @@
-### Pagination分页器
+---
+lang: zh-CN
+title: Pagination分页器
+---
+
+
+# Pagination分页器
 
 * 创建分页器
   
@@ -25,8 +31,9 @@
 * 设置当前页码`pagination.setCurrentPageIndex(3);`
 
 * 设置样式`pagination.getStyleClass().add(Pagination.STYLE_CLASS_BULLET);`
-  效果图
-  ![](../assets/Pasted%20image%2020220520073636.png)
+
+效果图
+![](../assets/Pasted%20image%2020220520073636.png)
 
 * 设置当前页码变化监听器
   
@@ -53,5 +60,5 @@
   });
   ```
   
-  效果图（默认样式）
-  ![](../assets/Pasted%20image%2020220520073715.png)
+效果图（默认样式）
+![](../assets/Pasted%20image%2020220520073715.png)

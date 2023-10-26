@@ -1,6 +1,12 @@
-### ColorPicker和DatePicker
+---
+lang: zh-CN
+title: ColorPicker和DatePicker
+---
 
-#### ColorPicker
+
+# ColorPicker和DatePicker
+
+## ColorPicker
 
 * 创建ColorPicker
   
@@ -30,10 +36,10 @@
   });
   ```
   
-  效果图
-  ![](../assets/Pasted%20image%2020220519203606.png)
+效果图
+![](../assets/Pasted%20image%2020220519203606.png)
   
-  #### DatePicker
+## DatePicker
 
 * 创建DatePicker
   
@@ -81,8 +87,8 @@
   });
   ```
   
-  效果图
-  ![](../assets/Pasted%20image%2020220519203906.png)
+效果图
+![](../assets/Pasted%20image%2020220519203906.png)
 
 * 修改默认日期格式
   
@@ -105,5 +111,5 @@
   });
   ```
   
-  效果图
-  ![](../assets/Pasted%20image%2020220519203938.png)
+效果图
+![](../assets/Pasted%20image%2020220519203938.png)

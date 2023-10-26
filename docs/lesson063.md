@@ -1,4 +1,4 @@
-### IntegerBinding自定义绑定计算
+# IntegerBinding自定义绑定计算
 
 1. 继承`IntegerBinding`
   

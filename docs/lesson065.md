@@ -1,4 +1,10 @@
-### 文件选择窗口
+---
+lang: zh-CN
+title: 文件选择窗口
+---
+
+
+# 文件选择窗口
 
 1. 创建5个按钮用以开启窗口
   
@@ -126,8 +132,7 @@
                  catch (IOException e) {
                      e.printStackTrace();
                  }
-             }
-                                                );
+             });
          }
      });
      ```

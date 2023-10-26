@@ -1,22 +1,28 @@
-### TextArea多行文本
+---
+lang: zh-CN
+title: TextArea多行文本
+---
+
+
+# TextArea多行文本
 
 * 创建多行文本`TextArea textArea = new TextArea();`
 
 * 设置允许自动换行`textArea.setWrapText(true);`
 
 * 设置初始几行几列
-  
-```java
-textArea.setPrefRowCount(5);  
-textArea.setPrefColumnCount(5);
-```
+      
+    ```java
+    textArea.setPrefRowCount(5);  
+    textArea.setPrefColumnCount(5);
+    ```
 
 * 设置宽高**会导致设置初始几行几列无效**
-  
-```java
-textArea.setPrefWidth(600);  
-textArea.setPrefHeight(300);
-```
+      
+    ```java
+    textArea.setPrefWidth(600);  
+    textArea.setPrefHeight(300);
+    ```
 
 * 添加文本`textArea.appendText("Hello World!\n");`
 
@@ -38,30 +44,30 @@ textArea.setPrefHeight(300);
 
 * 文本变化监听事件
   
-```java
-textArea.textProperty().addListener((observable, oldValue, newValue) -> {  
-    if (newValue.length() > 10) {  
-        textArea.setText(oldValue);  
-        return;  
-    }  
-    label.setText(newValue);  
-});
-```
+    ```java
+    textArea.textProperty().addListener((observable, oldValue, newValue) -> {  
+        if (newValue.length() > 10) {  
+            textArea.setText(oldValue);  
+            return;  
+        }  
+        label.setText(newValue);  
+    });
+    ```
 
 * 选择的文本发生变化监听事件
   
-```java
-textArea.selectedTextProperty().addListener((observable, oldValue, newValue) -> {  
-    System.out.println(newValue);  
-});
-```
+    ```java
+    textArea.selectedTextProperty().addListener((observable, oldValue, newValue) -> {  
+        System.out.println(newValue);  
+    });
+    ```
 
 * 左右滚动监听事件
-  
-```java
-textArea.scrollLeftProperty().addListener((observable, oldValue, newValue) -> {  
-    System.out.println(newValue);  
-});
-```
-
-![](../assets/Pasted%20image%2020220515135914.png)
+      
+    ```java
+    textArea.scrollLeftProperty().addListener((observable, oldValue, newValue) -> {  
+        System.out.println(newValue);  
+    });
+    ```
+    
+    ![](../assets/Pasted%20image%2020220515135914.png)

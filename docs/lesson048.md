@@ -1,6 +1,12 @@
-### Spinner微调器
+---
+lang: zh-CN
+title: Spinner微调器
+---
 
-#### 基本配置
+
+# Spinner微调器
+
+## 基本配置
 
 * 设置可编辑`spinner.setEditable(true);`
 
@@ -8,13 +14,13 @@
 
 * 值改变监听事件
   
-```java
-spinner.valueProperty().addListener((observable, oldValue, newValue) -> {  
-    System.out.println(newValue);  
-});
-```
+   ```java
+   spinner.valueProperty().addListener((observable, oldValue, newValue) -> {  
+       System.out.println(newValue);  
+   });
+   ```
 
-#### 使用方式
+## 使用方式
 1. 通过构造器传参创建
   
    ```java

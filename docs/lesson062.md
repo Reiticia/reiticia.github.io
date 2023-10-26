@@ -1,6 +1,11 @@
-### 绑定：字符串处理、对象处理
+---
+lang: zh-CN
+title: 绑定：字符串处理、对象处理
+---
 
-#### concat(),format() 字符串拼接和格式化输出
+# 绑定：字符串处理、对象处理
+
+## concat(),format() 字符串拼接和格式化输出
 
 ```java
 System.out.println("=============concat();format()==============");  
@@ -21,7 +26,7 @@ System.out.println(sexp1.get());
 > value = 20  
 > value = 20  
 
-#### max(),min() 最大值最小值
+## max(),min() 最大值最小值
 
 ```java
 SimpleIntegerProperty x = new SimpleIntegerProperty(1);  
@@ -33,7 +38,7 @@ System.out.println("Bindings.min(x,y).intValue() = " + Bindings.min(x, y).intVal
 > Bindings.max(x,y).intValue() = 2  
 > Bindings.min(x,y).intValue() = 1  
 
-#### createStringBinding() 自定义字符串匹配规则
+## createStringBinding() 自定义字符串匹配规则
 
 ```java
 StringExpression sexp2 = Bindings.createStringBinding(() -> {  
@@ -55,7 +60,7 @@ System.out.println("sexp2.get() = " + sexp2.get());
 > value.get() = 20  
 > sexp2.get() = Twenty  
 
-#### selectString() 深层绑定JavaBean中某个属性
+## selectString() 深层绑定JavaBean中某个属性
 
 1. 创建两层结构的JavaBean
   
@@ -106,27 +111,27 @@ System.out.println("sexp2.get() = " + sexp2.get());
    }
    ```
 
-```java
-// 嵌套一层的JavaBean
-Student student = new Student("张三");  
-SimpleObjectProperty<Student> studentProperty = new SimpleObjectProperty<>(student);  
-// 可观察属性，外层JavaBean中的属性名称，内层JavaBean中的属性名称  
-// 绑定了student对象中的school属性中的name属性  
-StringExpression sexp3 = Bindings.selectString(studentProperty, "school", "name");  
-System.out.println("sexp3.get() = " + sexp3.get());  
-// 当school的name属性改变时，会触发sexp3值的改变  
-student.setSchool("清华大学");  
-System.out.println("sexp3.get() = " + sexp3.get());
-```
+   ```java
+   // 嵌套一层的JavaBean
+   Student student = new Student("张三");  
+   SimpleObjectProperty<Student> studentProperty = new SimpleObjectProperty<>(student);  
+   // 可观察属性，外层JavaBean中的属性名称，内层JavaBean中的属性名称  
+   // 绑定了student对象中的school属性中的name属性  
+   StringExpression sexp3 = Bindings.selectString(studentProperty, "school", "name");  
+   System.out.println("sexp3.get() = " + sexp3.get());  
+   // 当school的name属性改变时，会触发sexp3值的改变  
+   student.setSchool("清华大学");  
+   System.out.println("sexp3.get() = " + sexp3.get());
+   ```
+   
+   > STUDENT  
+   > SCHOOL  
+   > sexp3.get() = 哈佛大学  
+   > STUDENT  
+   > SCHOOL  
+   > sexp3.get() = 清华大学  
 
-> STUDENT  
-> SCHOOL  
-> sexp3.get() = 哈佛大学  
-> STUDENT  
-> SCHOOL  
-> sexp3.get() = 清华大学  
-
-#### convert() 字符串转换
+## convert() 字符串转换
 
 ```java
 System.out.println("Bindings.convert(new SimpleIntegerProperty(100)).get().getClass() = " + Bindings.convert(new SimpleIntegerProperty(100)).get().getClass());

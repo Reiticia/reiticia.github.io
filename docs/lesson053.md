@@ -1,6 +1,11 @@
-### 可观察List、Set、Map
+---
+lang: zh-CN
+title: 可观察List、Set、Map
+---
 
-#### List
+# 可观察List、Set、Map
+
+## List
 
 * 创建List监视属性
   
@@ -42,10 +47,10 @@
       System.out.println("c.wasRemoved() = " + c.wasRemoved());  
       System.out.println("c.wasReplaced() = " + c.wasReplaced());  
       /* 
-     当可观察列表list中的泛型为普通数据类型时基本为false；
-     当可观察列表list中的泛型为监视属性时且创建list时指定了callback回调函数,
-     则如果列表中监视属性的值发生改变，则返回true
-    */
+      当可观察列表list中的泛型为普通数据类型时基本为false；
+      当可观察列表list中的泛型为监视属性时且创建list时指定了callback回调函数,
+      则如果列表中监视属性的值发生改变，则返回true
+      */
       System.out.println("c.wasUpdated() = " + c.wasUpdated());
       System.out.println("c.getAddedSubList() = " + c.getAddedSubList());// 获取增加或删除的元素列表  
       try {  
@@ -191,7 +196,7 @@
   > c.wasPermutated() = true
   > c.getPermutation(0) = 1
   
-  #### Set
+## Set
 
 * 创建Set监视属性
   
@@ -220,7 +225,7 @@
   setProperty.forEach(System.out::print);
   ```
   
-  #### Map
+## Map
 
 * 创建Map监视属性
   

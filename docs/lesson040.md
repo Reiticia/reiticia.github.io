@@ -1,6 +1,12 @@
-### 使用setCellFactory自定义单元格（本节使用JDK9）
+---
+lang: zh-CN
+title: 使用setCellFactory自定义单元格（本节使用JDK9）
+---
 
-#### Label和ListCell
+
+# 使用setCellFactory自定义单元格（本节使用JDK9）
+
+## Label和ListCell
 
 1. 创建Label
   
@@ -79,9 +85,9 @@
 
    ![](../assets/Pasted%20image%2020220519135550.png)
    
-   #### 泛型为String的ComboBox
+## 泛型为String的ComboBox
 
-5. 创建下拉列表
+1. 创建下拉列表
   
    ```java
    ComboBox<String> comboBox = new ComboBox<>();  
@@ -89,7 +95,7 @@
    comboBox.setPrefWidth(200);
    ```
 
-6. 自定义ListCell类
+2. 自定义ListCell类
   
    ```java
    class MyListCell<T> extends ListCell<T> {  
@@ -109,7 +115,7 @@
    }
    ```
 
-7. 设置自定义单元格
+3. 设置自定义单元格
   
    ```java
    comboBox.setCellFactory(new Callback<ListView<String>, ListCell<String>>() {  
@@ -121,13 +127,13 @@
    });
    ```
 
-8. 添加控件到布局中，调整位置，添加布局到场景，添加场景到舞台，调整舞台设置（省略）
+4. 添加控件到布局中，调整位置，添加布局到场景，添加场景到舞台，调整舞台设置（省略）
 
    ![](../assets/Pasted%20image%2020220519140002.png)
    
-   #### 泛型为Student的ComboBox
+## 泛型为Student的ComboBox
 
-9. 创建5个Student对象
+1. 创建5个Student对象
   
    ```java
    Student student1 = new Student("张三", 86, "语文");  
@@ -137,7 +143,7 @@
    Student student5 = new Student("钱七", 64, "化学");
    ```
 
-10. 创建下拉列表
+2. 创建下拉列表
   
     ```java
     ComboBox<Student> comboBox = new ComboBox<>();  
@@ -145,7 +151,7 @@
     comboBox.setPrefWidth(200);
     ```
 
-11. 自定义单元格
+3. 自定义单元格
   
     ```java
     comboBox.setCellFactory(new Callback<>() {  
@@ -175,7 +181,7 @@
     });
     ```
 
-12. 设置自定义字符串转换器
+4. 设置自定义字符串转换器
   
     ```java
     comboBox.setConverter(new StringConverter<>() {  
@@ -196,6 +202,6 @@
     });
     ```
 
-13. 添加控件到布局中，调整位置，添加布局到场景，添加场景到舞台，调整舞台设置（省略）
+5. 添加控件到布局中，调整位置，添加布局到场景，添加场景到舞台，调整舞台设置（省略）
   
     ![](../assets/Pasted%20image%2020220519140419.png)

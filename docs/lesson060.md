@@ -1,4 +1,9 @@
-### 集合类型的绑定
+---
+lang: zh-CN
+title: 集合类型的绑定
+---
+
+# 集合类型的绑定
 
 以下四种绑定方法List、Set、Map共有
 
@@ -11,7 +16,7 @@
 
 代码演示
 
-#### 单向绑定
+## 单向绑定
 
 测试代码
 
@@ -45,7 +50,7 @@ System.out.println("list = " + list + " | " + "list1 = " + list1);
 > listProperty.get() = [A, B, C, D, b] | listProperty1.get() = [A, B, C, D, b]  
 > list = [a, d, c] | list1 = [A, B, C, D, b]  
 
-#### 双向绑定
+## 双向绑定
 
 测试代码
 
@@ -79,7 +84,7 @@ System.out.println("list = " + list + " | " + "list1 = " + list1);
 > listProperty.get() = [A, B, C, D, b] | listProperty1.get() = [A, B, C, D, b]  
 > list = [a, d, c] | list1 = [A, B, C, D, b]  
 
-#### 单向绑定内容
+## 单向绑定内容
 
 测试代码
 
@@ -113,7 +118,7 @@ System.out.println("list = " + list + " | " + "list1 = " + list1);
 > listProperty.get() = [A, B, C, D, b] | listProperty1.get() = [A, D, C, B]  
 > list = [A, B, C, D, b] | list1 = [A, D, C, B]  
 
-#### 双向绑定内容
+## 双向绑定内容
 
 测试代码
 

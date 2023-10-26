@@ -1,6 +1,12 @@
-### 监视属性
+---
+lang: zh-CN
+title: 监视属性
+---
 
-#### SimpleIntegerProperty
+
+# 监视属性
+
+## SimpleIntegerProperty
 
 ```java
 SimpleIntegerProperty sip = new SimpleIntegerProperty(5);  
@@ -18,7 +24,7 @@ System.out.println("sip.get() = " + sip.get());
 > newValue: 10
 > sip.get() = 10
 
-#### ReadOnlyDoubleWrapper&ReadOnlyDoubleProperty
+## ReadOnlyDoubleWrapper&ReadOnlyDoubleProperty
 
 ```java
 ReadOnlyDoubleWrapper rodw = new ReadOnlyDoubleWrapper(3);  
@@ -35,7 +41,7 @@ System.out.println("property.get() = " + property.get());
 > rodw.get() = 5.0
 > property.get() = 5.0
 
-#### 创建实体类封装监视属性
+## 创建实体类封装监视属性
 
 1. 实体类
   

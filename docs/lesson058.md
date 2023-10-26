@@ -1,4 +1,10 @@
-### 其他监视属性的绑定判断
+---
+lang: zh-CN
+title: 其他监视属性的绑定判断
+---
+
+
+# 其他监视属性的绑定判断
 
 * 另一个构造器`SimpleIntegerProperty y = new SimpleIntegerProperty(student, "stu", 10);`
 
@@ -28,7 +34,7 @@
 
 * 获取只读属性`SimpleIntegerProperty.readOnlyIntegerProperty(y);`
   
-  #### 布尔类型的监视属性
+## 布尔类型的监视属性
   
   ```java
   SimpleBooleanProperty b1 = new SimpleBooleanProperty(true);  
@@ -41,7 +47,7 @@
   b1.isNotEqualTo(b2);
   ```
   
-  #### 字符串类型的监视属性
+## 字符串类型的监视属性
 
 * 创建两个变量
   
@@ -69,7 +75,7 @@
   > up.isEmpty().get() = true
   > up.isNull().get() = false
   
-  #### 对象类型的监视属性
+## 对象类型的监视属性
 
 * 创建属性`SimpleObjectProperty<Student> studentSimpleObjectProperty = new SimpleObjectProperty<>(student);`
 

@@ -1,4 +1,10 @@
-### Slider进度条
+---
+lang: zh-CN
+title: Slider进度条
+---
+
+
+# Slider进度条
 
 * 创建进度条
   
@@ -143,6 +149,5 @@
          }  
      });
      ```
-
 
 ![](../assets/VeryCapture_20220520095004.gif)

@@ -1,6 +1,12 @@
-### Image
+---
+lang: zh-CN
+title: Image
+---
 
-#### 图片加载方式
+
+# Image
+
+## 图片加载方式
 
 1. 通过文件输入流加载
   
@@ -45,7 +51,7 @@
    anchorPane.getChildren().addAll(imageView);
    ```
 
-#### 获取图片属性
+## 获取图片属性
 
 * 获取图片请求宽高
   
@@ -99,5 +105,5 @@
   });
   ```
   
-  效果图
-  ![](../assets/VeryCapture_20220529163517.gif)
+效果图
+![](../assets/VeryCapture_20220529163517.gif)

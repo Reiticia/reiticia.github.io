@@ -1,20 +1,26 @@
-### ChoiceBox和ComboBox修改下拉列表项
+---
+lang: zh-CN
+title: ChoiceBox和ComboBox修改下拉列表项
+---
+
+
+# ChoiceBox和ComboBox修改下拉列表项
 
 添加通用属性和控件，布局配置内容省略
 
-```java
-TextField textField = new TextField();  
-textField.setPrefWidth(100);  
-Button button = new Button("点击修改分数");  
-// 创建5个学生  
-Student student1 = new Student("张三", 79.0, "语文");  
-Student student2 = new Student("李四", 89.0, "语文");  
-Student student3 = new Student("王五", 69.0, "语文");  
-Student student4 = new Student("赵六", 80.0, "语文");  
-Student student5 = new Student("钱七", 50.0, "语文");
-```
+   ```java
+   TextField textField = new TextField();  
+   textField.setPrefWidth(100);  
+   Button button = new Button("点击修改分数");  
+   // 创建5个学生  
+   Student student1 = new Student("张三", 79.0, "语文");  
+   Student student2 = new Student("李四", 89.0, "语文");  
+   Student student3 = new Student("王五", 69.0, "语文");  
+   Student student4 = new Student("赵六", 80.0, "语文");  
+   Student student5 = new Student("钱七", 50.0, "语文");
+   ```
 
-#### ChoiceBox用法
+## ChoiceBox用法
 
 1. 初始化和展示数据
   
