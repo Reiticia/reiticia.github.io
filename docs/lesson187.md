@@ -1,4 +1,9 @@
-### Animation RotateTransition旋转动画
+---
+lang: zh-CN
+title: Animation RotateTransition旋转动画
+---
+
+# Animation RotateTransition旋转动画
 
 * 创建旋转动画`RotateTransition rt = new RotateTransition();`
 

@@ -1,4 +1,9 @@
-### Animation FillTransition颜色过渡动画
+---
+lang: zh-CN
+title: Animation FillTransition颜色过渡动画
+---
+
+# Animation FillTransition颜色过渡动画
 
 * 创建颜色过渡动画`FillTransition ft = new FillTransition();`
 

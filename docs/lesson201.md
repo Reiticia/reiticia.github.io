@@ -1,4 +1,10 @@
-### MediaPlayer
+---
+lang: zh-CN
+title: MediaPlayer
+---
+
+
+# MediaPlayer
 
 音量条拖动
 进度拖动

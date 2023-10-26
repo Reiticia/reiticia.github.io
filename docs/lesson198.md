@@ -1,4 +1,10 @@
-### Media媒体 AudioClip短音频播放
+---
+lang: zh-CN
+title: Media媒体 AudioClip短音频播放
+---
+
+
+# Media媒体 AudioClip短音频播放
 
 1. 获取音频文件`URL url = this.getClass().getClassLoader().getResource("music/Ring01.wav");`
 

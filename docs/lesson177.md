@@ -1,4 +1,10 @@
-### 3D图形 Material材质
+---
+lang: zh-CN
+title: 3D图形 Material材质
+---
+
+
+# 3D图形 Material材质
 
 * 创建材质`PhongMaterial phongMaterial = new PhongMaterial();`
 

@@ -1,4 +1,10 @@
-### Canvas画布
+---
+lang: zh-CN
+title: Canvas画布
+---
+
+
+# Canvas画布
 
 * 创建画布`Canvas canvas = new Canvas(600, 600);`
 

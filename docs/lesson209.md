@@ -1,4 +1,10 @@
-### Java11以模块化方式引入JavaFX
+---
+lang: zh-CN
+title: Java11以模块化方式引入JavaFX
+---
+
+
+# Java11以模块化方式引入JavaFX
 
 1. 添加JavaFX的jar包
 

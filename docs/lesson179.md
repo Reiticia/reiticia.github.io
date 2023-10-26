@@ -1,6 +1,12 @@
-### 3D图形 光源
+---
+lang: zh-CN
+title: 3D图形 光源
+---
 
-#### 环境光
+
+# 3D图形 光源
+
+## 环境光
 
 * 创建环境光`AmbientLight ambientLight = new AmbientLight();`
 
@@ -12,7 +18,7 @@
 
 ![](../assets/Pasted%20image%2020220618192416.png)
   
-#### 点光源
+## 点光源
 * 创建点光源`PointLight pointLight = new PointLight();`
 
 * 设置颜色`pointLight.setColor(Color.RED);`
@@ -22,11 +28,11 @@
 * 关闭点光源`pointLight.setLightOn(false);`
 
 * 设置位移
-  
-```java
-pointLight.setTranslateX(400);  
-pointLight.setTranslateY(400);  
-pointLight.setTranslateZ(-400);
-```
+      
+    ```java
+    pointLight.setTranslateX(400);  
+    pointLight.setTranslateY(400);  
+    pointLight.setTranslateZ(-400);
+    ```
   
 ![](../assets/Pasted%20image%2020220618192656.png)

@@ -1,4 +1,10 @@
-### Animation 跑马灯效果
+---
+lang: zh-CN
+title: Animation 跑马灯效果
+---
+
+
+# Animation 跑马灯效果
 
 1. 界面布局
   
@@ -68,9 +74,9 @@
    
    ![](../assets/VeryCapture_20220620125002.gif)
    
-   #### 实例（切换界面显示）
+## 实例（切换界面显示）
 
-5. 创建2个置换效果分别设置于hBox和hBox1
+1. 创建2个置换效果分别设置于hBox和hBox1
   
    ```java
    // 置换效果  
@@ -81,7 +87,7 @@
    hBox.toBack();// 置底
    ```
 
-6. 模拟位移
+2. 模拟位移
   
    ```java
    // 模拟位移组件  
@@ -103,7 +109,7 @@
    });
    ```
 
-7. 监听（同理可使用绑定进行操作）
+3. 监听（同理可使用绑定进行操作）
   
    ```java
    simulation.translateXProperty().addListener((observable, oldValue, newValue) -> {  
@@ -113,7 +119,7 @@
    });
    ```
 
-8. 按钮点击事件
+4. 按钮点击事件
   
    ```java
    button1.setOnAction(event -> {  

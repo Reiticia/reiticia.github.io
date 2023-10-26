@@ -1,4 +1,10 @@
-### Animation FadeTransition渐变动画
+---
+lang: zh-CN
+title: Animation FadeTransition渐变动画
+---
+
+
+# Animation FadeTransition渐变动画
 
 * 创建渐变动画`FadeTransition ft = new FadeTransition();`
 

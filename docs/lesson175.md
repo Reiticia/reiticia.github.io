@@ -1,4 +1,10 @@
-### 3D图形
+---
+lang: zh-CN
+title: 3D图形
+---
+
+
+# 3D图形
 
 * 创建场景时启用3D渲染`Scene scene = new Scene(root, 800, 800, true);`
 

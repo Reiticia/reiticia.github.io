@@ -1,6 +1,11 @@
-### AnimationTimeLine动画组合
+---
+lang: zh-CN
+title: AnimationTimeLine动画组合
+---
 
-##### 多属性组合
+# AnimationTimeLine动画组合
+
+## 多属性组合
 
 ```java
 Timeline timeline = new Timeline();  
@@ -23,7 +28,7 @@ timeline.setAutoReverse(true);
 
 ![](../assets/VeryCapture_20220619164428.gif)
 
-##### 多属性异步变化
+## 多属性异步变化
 
 ```java
 Timeline timeline = new Timeline();  
@@ -55,7 +60,7 @@ keyFrames.add(kf6);
 
 ![](../assets/VeryCapture_20220619164607.gif)
 
-##### 动画拆分
+## 动画拆分
 
 ```java
 Timeline timeline = new Timeline();  
@@ -77,7 +82,7 @@ timeline.setOnFinished(event -> {
 
 ![](../assets/VeryCapture_20220619164732.gif)
 
-##### 使用自定义缩放点
+## 使用自定义缩放点
 
 ```java
 Timeline timeline = new Timeline();  
@@ -96,7 +101,7 @@ timeline.getKeyFrames().addAll(kf1, kf2);
 
 ![](../assets/VeryCapture_20220619164852.gif)
 
-##### 使用自定义旋转点
+## 使用自定义旋转点
 
 ```java
 Timeline timeline = new Timeline();  

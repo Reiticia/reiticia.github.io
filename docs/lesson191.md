@@ -1,4 +1,9 @@
-### Animation StrokeTransition边框颜色过渡动画
+---
+lang: zh-CN
+title: Animation StrokeTransition边框颜色过渡动画
+---
+
+# Animation StrokeTransition边框颜色过渡动画
 
 * 创建缩放动画`StrokeTransition st = new StrokeTransition();`
 

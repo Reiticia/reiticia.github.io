@@ -1,4 +1,10 @@
-### Animation AnimationTimer动画计时器
+---
+lang: zh-CN
+title: Animation AnimationTimer动画计时器
+---
+
+
+# Animation AnimationTimer动画计时器
 
 * 创建动画计时器
   

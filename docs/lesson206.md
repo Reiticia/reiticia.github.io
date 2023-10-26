@@ -1,6 +1,12 @@
-### Adaptive layout自适应布局
+---
+lang: zh-CN
+title: Adaptive layout自适应布局
+---
 
-#### Java代码方式实现
+
+# Adaptive layout自适应布局
+
+## Java代码方式实现
 
 ```java
 private Pane getViewJava(){  
@@ -37,7 +43,7 @@ private Pane getViewJava(){
 
 ![](../assets/VeryCapture_20220621212003.gif)
 
-#### Fxml方式实现
+## Fxml方式实现
 
 ```xml
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171"  

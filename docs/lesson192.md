@@ -1,4 +1,10 @@
-### Animation PathTransition路径动画
+---
+lang: zh-CN
+title: Animation PathTransition路径动画
+---
+
+
+# Animation PathTransition路径动画
 
 1. 描绘路径
   

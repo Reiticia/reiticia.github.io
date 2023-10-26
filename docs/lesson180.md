@@ -1,4 +1,10 @@
-### 3D图形 SubScene子场景
+---
+lang: zh-CN
+title: 3D图形 SubScene子场景
+---
+
+
+# 3D图形 SubScene子场景
 
 * 创建子场景`SubScene subScene = new SubScene(root, 800, 800, false, SceneAntialiasing.BALANCED);`
 

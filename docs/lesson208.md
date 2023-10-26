@@ -1,6 +1,12 @@
-### 自定义组件
+---
+lang: zh-CN
+title: 自定义组件
+---
 
-#### 封装方法返回节点
+
+# 自定义组件
+
+## 封装方法返回节点
 
 ```java
 private Node getView() {  
@@ -13,7 +19,7 @@ private Node getView() {
 }
 ```
 
-#### 继承节点重写layoutChildren
+## 继承节点重写layoutChildren
 
 ```java
 public class MyNode extends VBox {  

@@ -1,4 +1,9 @@
-### 2D图形 图形计算
+---
+lang: zh-CN
+title: 2D图形 图形计算
+---
+
+# 2D图形 图形计算
 
 * 图形裁切`imageView.setClip(circle);`
 

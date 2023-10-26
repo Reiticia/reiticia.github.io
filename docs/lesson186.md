@@ -1,4 +1,9 @@
-### Animation TranslateTransition位移动画
+---
+lang: zh-CN
+title: Animation TranslateTransition位移动画
+---
+
+# Animation TranslateTransition位移动画
 
 * 创建位移动画`TranslateTransition tt = new TranslateTransition();`
 
@@ -7,25 +12,25 @@
 * 设置动画的节点`tt.setNode(rectangle);`
 
 * 设置起始位置
-  
-```java
-tt.setFromX(0);// 起始位置  
-tt.setFromY(0);
-```
+      
+    ```java
+    tt.setFromX(0);// 起始位置  
+    tt.setFromY(0);
+    ```
 
 * 设置终止位置
 
-```java
-tt.setToX(500);// 终止位置  
-tt.setToY(500);
-```
+    ```java
+    tt.setToX(500);// 终止位置  
+    tt.setToY(500);
+    ```
 
 * 设置偏移量**如果和setTo同时存在，则该设置无效**
 
-```java
-// tt.setByX(100);// 偏移量
-// tt.setByY(100);
-```
+    ```java
+    // tt.setByX(100);// 偏移量
+    // tt.setByY(100);
+    ```
 
 * 设置动画反向播放`tt.setAutoReverse(true);`
 
