@@ -1,4 +1,10 @@
-### ColorAdjust颜色调整
+---
+lang: zh-CN
+title: ColorAdjust颜色调整
+---
+
+
+# ColorAdjust颜色调整
 
 * 创建色相饱和度`ColorAdjust colorAdjust = new ColorAdjust();`
   

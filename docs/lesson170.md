@@ -1,6 +1,12 @@
-### 2D图形 QuadCurve二次曲线方程&CubicCurve三次曲线方程
+---
+lang: zh-CN
+title: 2D图形 QuadCurve二次曲线方程&CubicCurve三次曲线方程
+---
 
-#### QuadCurve二次曲线方程
+
+# 2D图形 QuadCurve二次曲线方程&CubicCurve三次曲线方程
+
+## QuadCurve二次曲线方程
 
 ```java
 AnchorPane anchorPane = new AnchorPane();  
@@ -25,7 +31,7 @@ anchorPane.getChildren().add(quadCurve);
 box.getChildren().add(anchorPane);
 ```
 
-#### CubicCurve三次曲线方程
+## CubicCurve三次曲线方程
 
 ```java
 AnchorPane anchorPane2 = new AnchorPane();  

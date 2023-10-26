@@ -1,4 +1,10 @@
-### ImageInput图片填充
+---
+lang: zh-CN
+title: ImageInput图片填充
+---
+
+
+# ImageInput图片填充
 
 ```java
 ImageInput imageInput = new ImageInput();  

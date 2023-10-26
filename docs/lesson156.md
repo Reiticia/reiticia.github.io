@@ -1,4 +1,10 @@
-### ColorInput颜色填充
+---
+lang: zh-CN
+title: ColorInput颜色填充
+---
+
+
+# ColorInput颜色填充
 
 ```java
 ColorInput colorInput = new ColorInput();  

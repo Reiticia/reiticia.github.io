@@ -1,4 +1,10 @@
-### Blend图层混合
+---
+lang: zh-CN
+title: Blend图层混合
+---
+
+
+# Blend图层混合
 
 ```java
 Blend blend = new Blend();  

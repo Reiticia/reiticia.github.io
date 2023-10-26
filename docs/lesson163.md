@@ -1,4 +1,10 @@
-### 2D图形 Line线
+---
+lang: zh-CN
+title: 2D图形 Line线
+---
+
+
+# 2D图形 Line线
 
 * 创建线段`Line line = new Line(0, 0, 100, 100);`
   
@@ -16,23 +22,23 @@
   
 * 线段连接的效果
   
-```java
-AnchorPane otherBox = new AnchorPane();  
-Line otLine = new Line(0, 0, 100, 0);  
-otLine.setStroke(Color.valueOf("#ff9999"));  
-otLine.setStrokeWidth(10);  
-otLine.setStrokeLineCap(StrokeLineCap.ROUND);  
-otherBox.getChildren().add(otLine);  
-Line otLine1 = new Line(100, 0, 100, 100);  
-otLine1.setStroke(Color.valueOf("#996699"));  
-otLine1.setStrokeWidth(10);  
-otLine1.setStrokeLineCap(StrokeLineCap.BUTT);// 两条线段之间衔接后会有空隙  
-otherBox.getChildren().add(otLine1);  
-Line otLine2 = new Line(100, 100, 200, 100);  
-otLine2.setStroke(Color.valueOf("#ffcccc"));  
-otLine2.setStrokeWidth(10);  
-otLine2.setStrokeLineCap(StrokeLineCap.SQUARE);// 默认值  
-otherBox.getChildren().add(otLine2);
-```
-
-![](../assets/Pasted%20image%2020220617081158.png)
+    ```java
+    AnchorPane otherBox = new AnchorPane();  
+    Line otLine = new Line(0, 0, 100, 0);  
+    otLine.setStroke(Color.valueOf("#ff9999"));  
+    otLine.setStrokeWidth(10);  
+    otLine.setStrokeLineCap(StrokeLineCap.ROUND);  
+    otherBox.getChildren().add(otLine);  
+    Line otLine1 = new Line(100, 0, 100, 100);  
+    otLine1.setStroke(Color.valueOf("#996699"));  
+    otLine1.setStrokeWidth(10);  
+    otLine1.setStrokeLineCap(StrokeLineCap.BUTT);// 两条线段之间衔接后会有空隙  
+    otherBox.getChildren().add(otLine1);  
+    Line otLine2 = new Line(100, 100, 200, 100);  
+    otLine2.setStroke(Color.valueOf("#ffcccc"));  
+    otLine2.setStrokeWidth(10);  
+    otLine2.setStrokeLineCap(StrokeLineCap.SQUARE);// 默认值  
+    otherBox.getChildren().add(otLine2);
+    ```
+    
+    ![](../assets/Pasted%20image%2020220617081158.png)

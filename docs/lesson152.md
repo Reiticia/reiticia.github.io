@@ -1,6 +1,12 @@
-### Bloom和Glow发光效果
+---
+lang: zh-CN
+title: Bloom和Glow发光效果
+---
 
-#### Bloom
+
+# Bloom和Glow发光效果
+
+## Bloom
 
 ```java
 Bloom bloom = new Bloom();  
@@ -8,7 +14,7 @@ Bloom bloom = new Bloom();
 bloom.setThreshold(0.5);
 ```
 
-#### Glow
+## Glow
 
 ```java
 Glow glow = new Glow();  

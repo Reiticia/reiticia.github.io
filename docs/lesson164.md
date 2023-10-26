@@ -1,4 +1,9 @@
-### 2D图形  Polyline折线
+---
+lang: zh-CN
+title: 2D图形  Polyline折线
+---
+
+# 2D图形  Polyline折线
 
 * 创建折线`Polyline polyline = new Polyline(0, 0, 100, 100, 200, 100);`
 
@@ -16,11 +21,11 @@
 
 * 点击事件
   
-```java
-// 点击四周线段和中间区域有效，如果不设置颜色填充，则点击中间区域无效  
-polyline4.setOnMouseClicked(event -> {  
-    System.out.println("点击了polyline4");  
-});
-```
-
-![](../assets/Pasted%20image%2020220617090936.png)
+    ```java
+    // 点击四周线段和中间区域有效，如果不设置颜色填充，则点击中间区域无效  
+    polyline4.setOnMouseClicked(event -> {  
+        System.out.println("点击了polyline4");  
+    });
+    ```
+    
+    ![](../assets/Pasted%20image%2020220617090936.png)

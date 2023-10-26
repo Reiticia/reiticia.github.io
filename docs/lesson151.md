@@ -1,4 +1,11 @@
-### MotionBlur运动模糊
+---
+lang: zh-CN
+title: MotionBlur运动模糊
+---
+
+
+
+# MotionBlur运动模糊
 
 * 创建运动模糊`MotionBlur motionBlur = new MotionBlur();`
 

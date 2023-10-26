@@ -1,4 +1,10 @@
-### DisplacementMap位移图
+---
+lang: zh-CN
+title: DisplacementMap位移图
+---
+
+
+# DisplacementMap位移图
 
 * 创建位移图`DisplacementMap displacementMap = new DisplacementMap();`
 
@@ -11,30 +17,31 @@
 * 如果为true，则图形不可见区域会被可见区域平铺填充`displacementMap.setWrap(true);`
 
 * 设置图形错位
-  
-```java
-int w = 100;  
-int h = 100;  
-FloatMap floatMap = new FloatMap(w, h);  
-float value = 0.5f; // 错位距离，越大越远  
-for (int i = 0; i < floatMap.getWidth(); i++) {  
-    for (int j = 0; j < floatMap.getHeight(); j++) {  
-        float tmp;  
-        if (j < h / 2) {  
-            tmp = value;  
-        } else {  
-            tmp = value * -1;  
+      
+    ```java
+    int w = 100;  
+    int h = 100;  
+    FloatMap floatMap = new FloatMap(w, h);  
+    float value = 0.5f; // 错位距离，越大越远  
+    for (int i = 0; i < floatMap.getWidth(); i++) {  
+        for (int j = 0; j < floatMap.getHeight(); j++) {  
+            float tmp;  
+            if (j < h / 2) {  
+                tmp = value;  
+            } else {  
+                tmp = value * -1;  
+            }  
+            floatMap.setSamples(i, j, tmp, 0);  
         }  
-        floatMap.setSamples(i, j, tmp, 0);  
     }  
-}  
-displacementMap.setMapData(floatMap);
-```
+    displacementMap.setMapData(floatMap);
+    ```
+  
 * 图形缩放比例
   
-```java
-displacementMap.setScaleX(0.5);  
-displacementMap.setScaleY(0.5);
-```
+    ```java
+    displacementMap.setScaleX(0.5);  
+    displacementMap.setScaleY(0.5);
+    ```
 
 ![](../assets/Pasted%20image%2020220616170215.png)

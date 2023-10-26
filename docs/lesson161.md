@@ -1,4 +1,10 @@
-### Lighting类光照效果
+---
+lang: zh-CN
+title: Lighting类光照效果
+---
+
+
+# Lighting类光照效果
 
 * 创建类光照效果`Lighting lighting = new Lighting();`
 

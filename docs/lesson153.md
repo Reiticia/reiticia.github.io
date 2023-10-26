@@ -1,4 +1,11 @@
-### SepiaTone棕褐色调效果
+---
+lang: zh-CN
+title: SepiaTone棕褐色调效果
+---
+
+
+
+# SepiaTone棕褐色调效果
 
 * 创建棕褐色调`SepiaTone sepiaTone = new SepiaTone();`
 
