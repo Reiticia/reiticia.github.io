@@ -1,6 +1,12 @@
-### Text&Font
+---
+lang: zh-CN
+title: Text&Font
+---
 
-#### Font字体
+
+# Text&Font
+
+## Font字体
 
 * 创建字体`Font font1 = new Font("AdobeDevanagari-Regular", 25);`
 
@@ -10,13 +16,13 @@
 
 * 获取系统中所有安装字体
   
-```java
-Font.getFamilies().forEach(System.out::println);  
-System.out.println("------------------------");  
-Font.getFontNames().forEach(System.out::println);
-```
-  
-#### Text文本
+    ```java
+    Font.getFamilies().forEach(System.out::println);  
+    System.out.println("------------------------");  
+    Font.getFontNames().forEach(System.out::println);
+    ```
+      
+## Text文本
 * 创建文本`Text text2 = new Text("Hello World");`
 
 * 设置字体`text.setFont(font);`
@@ -42,20 +48,21 @@ Font.getFontNames().forEach(System.out::println);
 * 用像素限制宽度`text6.setWrappingWidth(30);`
 
 * 设置位置
+      
+    ```java
+    text.setX(100);  
+    text.setY(100);
+    ```
   
-```java
-text.setX(100);  
-text.setY(100);
-```
-* 四种位置对齐方式==不能共存，以最后一个设置为准==
+* 四种位置对齐方式（不能共存，以最后一个设置为准）
   
-```java
-// 位置对齐方式：以左上角为观测点计算坐标(X,Y)  
-text.setTextOrigin(VPos.TOP);  
-// 位置对齐方式：以中间为观测点计算坐标(X,Y)  
-text.setTextOrigin(VPos.CENTER);  
-// 位置对齐方式：以左下角为观测点计算坐标(X,Y)  
-text.setTextOrigin(VPos.BASELINE);  
-// 位置对齐方式：以左下角为观测点计算坐标(X,Y)，相比上面一行文本会向上移动一点  
-text.setTextOrigin(VPos.BOTTOM);
-```
+    ```java
+    // 位置对齐方式：以左上角为观测点计算坐标(X,Y)  
+    text.setTextOrigin(VPos.TOP);  
+    // 位置对齐方式：以中间为观测点计算坐标(X,Y)  
+    text.setTextOrigin(VPos.CENTER);  
+    // 位置对齐方式：以左下角为观测点计算坐标(X,Y)  
+    text.setTextOrigin(VPos.BASELINE);  
+    // 位置对齐方式：以左下角为观测点计算坐标(X,Y)，相比上面一行文本会向上移动一点  
+    text.setTextOrigin(VPos.BOTTOM);
+    ```

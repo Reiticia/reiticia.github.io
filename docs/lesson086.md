@@ -1,4 +1,10 @@
-### ListView自定义单元格
+---
+lang: zh-CN
+title: ListView自定义单元格
+---
+
+
+# ListView自定义单元格
 
 1. 创建10个DataPro数据并创建可观察列表
   
@@ -35,8 +41,11 @@
    observableList.add(data11);
    ```
 2. 将数据拷贝一份`List<DataPro> listBackup = new ArrayList<>(observableList);`
+
 3. 通过observableList创建listView`ListView<DataPro> listView = new ListView<>(observableList);`
+
 4. 设置listView可编辑`listView.setEditable(true);`
+
 5. 自定义单元格
   
    ```java
