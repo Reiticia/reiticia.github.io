@@ -1,4 +1,10 @@
-### 鼠标事件（点击）
+---
+lang: zh-CN
+title: 鼠标事件（续）
+---
+
+
+# 鼠标事件（续）
 
 * 获取此次点击位置和上次是否一致`event.isStillSincePress()`
 

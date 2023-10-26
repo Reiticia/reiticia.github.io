@@ -1,6 +1,12 @@
-### 鼠标事件（拖拽案例）
+---
+lang: zh-CN
+title: 鼠标事件（拖拽案例）
+---
 
-#### 按钮拖拽
+
+# 鼠标事件（拖拽案例）
+
+## 按钮拖拽
 
 1. 获取鼠标按键按下时相对于按钮内部的坐标
   
@@ -10,6 +16,7 @@
        sceneOfY = event.getY();  
    });
    ```
+   
 2. 按钮随鼠标拖拽而移动
   
    ```java
@@ -23,8 +30,9 @@
    效果图
    ![](../assets/VeryCapture_20220601160905.gif)
    
-   #### 窗口拖拽
-3. 获得鼠标相对于窗口的坐标
+## 窗口拖拽
+
+1. 获得鼠标相对于窗口的坐标
   
    ```java
    scene.setOnMousePressed(event -> {  
@@ -32,7 +40,8 @@
        screenOfY = event.getScreenY() - primaryStage.getY();  
    });
    ```
-4. 窗口随鼠标拖拽而移动
+   
+2. 窗口随鼠标拖拽而移动
   
    ```java
    scene.setOnMouseDragged(event -> {  
@@ -43,7 +52,8 @@
    
    ![](../assets/VeryCapture_20220601161156.gif)
    
-#### 布局和窗口设置
+## 布局和窗口设置
+
 * 设置布局样式
   
   ```java
@@ -53,6 +63,7 @@
         "-fx-border-color: white; -fx-border-style: SOLID; -fx-border-width: 20; -fx-border-radius: 30; -fx-border-insets: 0;";
   anchorPane.setStyle(style);
   ```
+  
 * 设置场景背景为白色透明`scene.setFill(Paint.valueOf("#ffffff00"));`
 
 * 设置舞台窗口样式`primaryStage.initStyle(StageStyle.TRANSPARENT);`

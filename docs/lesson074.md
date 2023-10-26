@@ -1,6 +1,12 @@
-### 鼠标事件（拖拽）
+---
+lang: zh-CN
+title: 鼠标事件（拖拽）
+---
 
-#### 鼠标拖拽==在button1上点击(左中右键)后进行拖拽，拖拽区域没有限制==
+
+# 鼠标事件（拖拽）
+
+## 鼠标拖拽==在button1上点击(左中右键)后进行拖拽，拖拽区域没有限制==
 
 ```java
 button1.setOnMouseDragged(new EventHandler<MouseEvent>() {  
@@ -11,7 +17,7 @@ button1.setOnMouseDragged(new EventHandler<MouseEvent>() {
 });
 ```
 
-#### 鼠标拖拽==当鼠标指针移除组件时，事件不会被触发==
+## 鼠标拖拽（当鼠标指针移除组件时，事件不会被触发）
 
 ```java
 button1.setOnMouseDragOver(new EventHandler<MouseDragEvent>() {  
@@ -22,7 +28,7 @@ button1.setOnMouseDragOver(new EventHandler<MouseDragEvent>() {
 });
 ```
 
-#### 拖拽检测（每次按下鼠标按键进行拖动，会触发事件，直到松开按键重新按下才会重新监听）
+## 拖拽检测（每次按下鼠标按键进行拖动，会触发事件，直到松开按键重新按下才会重新监听）
 
 ```java
 button1.setOnDragDetected(new EventHandler<MouseEvent>() {  
@@ -35,7 +41,7 @@ button1.setOnDragDetected(new EventHandler<MouseEvent>() {
 });
 ```
 
-#### 拖拽进入
+## 拖拽进入
 
 ```java
 button1.setOnMouseDragEntered(new EventHandler<MouseDragEvent>() {  
@@ -46,7 +52,7 @@ button1.setOnMouseDragEntered(new EventHandler<MouseDragEvent>() {
 });
 ```
 
-#### 拖拽退出
+## 拖拽退出
 
 ```java
 button1.setOnMouseDragExited(new EventHandler<MouseDragEvent>() {  
@@ -57,7 +63,7 @@ button1.setOnMouseDragExited(new EventHandler<MouseDragEvent>() {
 });
 ```
 
-#### 拖拽释放
+## 拖拽释放
 
 ```java
 button1.setOnMouseDragReleased(new EventHandler<MouseDragEvent>() {  
@@ -81,7 +87,7 @@ button2.setOnMouseDragEntered(new EventHandler<MouseDragEvent>() {
 });
 ```
 
-#### 获取事件对象
+## 获取事件对象
 
 ```java
 // 鼠标在button1上按下按键，拖拽至button2上

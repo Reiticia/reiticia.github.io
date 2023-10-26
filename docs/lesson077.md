@@ -1,4 +1,9 @@
-### 鼠标事件（传递和冒泡）
+---
+lang: zh-CN
+title: 鼠标事件（传递和冒泡）
+---
+
+# 鼠标事件（传递和冒泡）
 
 ==自定义的事件响应方法比内置的事件响应方法优先执行==
 
@@ -32,17 +37,20 @@
    MyEventHandler stageHandler = new MyEventHandler(ConsoleColor.CYAN);
    ```
    
-#### 事件传递
+## 事件传递
 
-   **调用顺序：父组件->子组件**
+**调用顺序：父组件->子组件**
+
 * 事件处理（传递）`hBox.addEventFilter(MouseEvent.MOUSE_CLICKED, hBoxHandler);`
 
 * 阻止事件传递`event.consume();`
   
-#### 事件冒泡
+## 事件冒泡
 
 **调用顺序：子组件->父组件**
+
 * 事件处理（冒泡）`hBox.addEventHandler(MouseEvent.MOUSE_CLICKED, hBoxHandler);`
 
 * 阻止事件冒泡`event.consume();`
-  **button本身无法进行事件冒泡，要实现事件冒泡需要手动调用事件**`Event.fireEvent(hBox, event);`
+
+**button本身无法进行事件冒泡，要实现事件冒泡需要手动调用事件**`Event.fireEvent(hBox, event);`

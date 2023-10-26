@@ -1,6 +1,12 @@
-### Dragboard 鼠标拖拽结合剪贴板
+---
+lang: zh-CN
+title: Dragboard 鼠标拖拽结合剪贴板
+---
 
-#### 将标签文本拖拽到输入框中
+
+# Dragboard 鼠标拖拽结合剪贴板
+
+## 将标签文本拖拽到输入框中
 
 1. 创建标签和输入框
   
@@ -48,11 +54,9 @@
        textField.setText(event.getDragboard().getString());  
        event.setDropCompleted(true);  
    });
-   ```
-   
-5. xxxxxxxxxx3 1ClipboardContent content = new ClipboardContent();2content.put(DataFormat.IMAGE,new Image("file:E:\\Users\\86158\\图片\\110300202.jpg"));3clipboard.setContent(content);java
-  
-   ```java
+   ClipboardContent content = new ClipboardContent();
+   content.put(DataFormat.IMAGE,new Image("file:E:\\Users\\86158\\图片\\110300202.jpg"));
+   clipboard.setContent(content);
    label.setOnDragDone(new EventHandler<DragEvent>() {  
        @Override  
        public void handle(DragEvent event) {  
@@ -65,8 +69,9 @@
    
    ![](../assets/VeryCapture_20220602092416.gif)
    
-   #### 将外部图片拖拽到界面中
-6. 拖拽进入到hBox
+## 将外部图片拖拽到界面中
+
+1. 拖拽进入到hBox
   
    ```java
    hBox.setOnDragEntered(event -> {  
@@ -76,7 +81,7 @@
    });
    ```
    
-7. 拖拽退出到hBox外
+2. 拖拽退出到hBox外
   
    ```java
    hBox.setOnDragExited(event -> {  
@@ -84,7 +89,7 @@
    });
    ```
    
-8. 拖拽经过hBox
+3. 拖拽经过hBox
   
    ```java
    hBox.setOnDragOver(event -> {  
@@ -93,7 +98,7 @@
    });
    ```
    
-9. 拖拽释放
+4. 拖拽释放
   
    ```java
    hBox.setOnDragDropped(event -> {  

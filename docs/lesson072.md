@@ -1,6 +1,12 @@
-### 键盘事件
+---
+lang: zh-CN
+title: 键盘事件
+---
 
-#### 键盘按下事件==如果按下按键不放，则会多次触发监听==
+
+# 键盘事件
+
+## 键盘按下事件（如果按下按键不放，则会多次触发监听）
 
 ```java
 button1.setOnKeyPressed(new EventHandler<KeyEvent>() {  
@@ -30,7 +36,7 @@ button1.setOnKeyPressed(new EventHandler<KeyEvent>() {
 });
 ```
 
-#### 松开按键事件
+## 松开按键事件
 
 ```java
 button1.setOnKeyReleased(new EventHandler<KeyEvent>() {  
@@ -45,7 +51,7 @@ button1.setOnKeyReleased(new EventHandler<KeyEvent>() {
 });
 ```
 
-#### 作用于有输入焦点的组件的监听器
+## 作用于有输入焦点的组件的监听器
 
 ```java
 textField.setOnKeyTyped(new EventHandler<KeyEvent>() {  

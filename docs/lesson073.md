@@ -1,6 +1,12 @@
-### 鼠标事件（点击）
+---
+lang: zh-CN
+title: 鼠标事件（点击）
+---
 
-#### 鼠标点击事件
+
+# 鼠标事件（点击）
+
+## 鼠标点击事件
 
 ```java
 button1.setOnMouseClicked(new EventHandler<MouseEvent>() {  
@@ -36,7 +42,7 @@ button1.setOnMouseClicked(new EventHandler<MouseEvent>() {
 });
 ```
 
-#### 鼠标按下
+## 鼠标按下
 
 ```java
 button1.setOnMousePressed(new EventHandler<MouseEvent>() {  
@@ -47,7 +53,7 @@ button1.setOnMousePressed(new EventHandler<MouseEvent>() {
 });
 ```
 
-#### 鼠标释放
+## 鼠标释放
 
 ```java
 button1.setOnMouseReleased(new EventHandler<MouseEvent>() {  
@@ -58,7 +64,7 @@ button1.setOnMouseReleased(new EventHandler<MouseEvent>() {
 });
 ```
 
-#### 鼠标进入
+## 鼠标进入
 
 ```java
 button1.setOnMouseEntered(new EventHandler<MouseEvent>() {  
@@ -71,7 +77,7 @@ button1.setOnMouseEntered(new EventHandler<MouseEvent>() {
 });
 ```
 
-#### 鼠标退出
+## 鼠标退出
 
 ```java
 button1.setOnMouseExited(new EventHandler<MouseEvent>() {  
@@ -82,7 +88,7 @@ button1.setOnMouseExited(new EventHandler<MouseEvent>() {
 });
 ```
 
-#### 鼠标移动
+## 鼠标移动
 
 ```java
 button2.setOnMouseMoved(new EventHandler<MouseEvent>() {  
