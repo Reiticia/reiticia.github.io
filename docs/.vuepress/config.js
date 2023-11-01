@@ -9,7 +9,7 @@ export default defineUserConfig({
     base: '/javafx-study/',
     theme: defaultTheme({
         docsBranch: 'main',
-        repo: 'https://github.com/reine-ishyanami/javafx-study',
+        repo: 'https://github.com/Reiticia/javafx-study',
         sidebar: [
             {
                 'text': '首页',
