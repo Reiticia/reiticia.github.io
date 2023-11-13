@@ -7,6 +7,7 @@ export default defineUserConfig({
     port: 8080,
     host: '0.0.0.0',
     base: '/javafx-study/',
+    head: [["link", { rel: "icon", href: "https://avatars.githubusercontent.com/u/149501682?v=4" }]],
     theme: defaultTheme({
         docsBranch: 'main',
         repo: 'https://github.com/Reiticia/javafx-study',
