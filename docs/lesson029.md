@@ -48,7 +48,7 @@ title: TitledPane、Accordion
 
 ## Accordion手风琴
 
-==特点：手风琴中可以设置多个标题面板，同一时间只能展开一个面板==
+> 特点：手风琴中可以设置多个标题面板，同一时间只能展开一个面板
 
 * 创建一个手风琴`Accordion accordion = new Accordion();`
 

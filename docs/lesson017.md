@@ -30,4 +30,4 @@ title: FlowPane流式布局
 
 * 设置边距`flowPane.setPadding(new Insets(10));`
 
-* 设置第一个按钮的外边距==此时其他按钮距离顶部的距离也会随着改变==`FlowPane.setMargin(buttons[0], new Insets(10));`
+* 设置第一个按钮的外边距**此时其他按钮距离顶部的距离也会随着改变**`FlowPane.setMargin(buttons[0], new Insets(10));`

@@ -13,9 +13,9 @@ title: Slider进度条
   Slider slider = new Slider(0, 100, 50);
   ```
 
-* 设置宽度==水平进度条使用==`slider.setPrefWidth(500);`
+* 设置宽度**水平进度条使用**`slider.setPrefWidth(500);`
 
-* 设置高度==垂直进度条使用==`slider.setPrefHeight(500);`
+* 设置高度**垂直进度条使用**`slider.setPrefHeight(500);`
 
 * 设置位置
   

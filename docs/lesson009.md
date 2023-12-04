@@ -40,7 +40,7 @@ title: Button按钮
 
 * 设置文本颜色`button.setTextFill(Color.RED);`
 
-* 设置CSS样式（==如果使用多条`setStyle`语句，只有最后一条语句的效果生效==）
+* 设置CSS样式（**如果使用多条`setStyle`语句，只有最后一条语句的效果生效**）
       
     ```java
     // 背景颜色、圆角

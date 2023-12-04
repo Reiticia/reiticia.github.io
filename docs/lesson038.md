@@ -12,7 +12,7 @@ title: ComboBox下拉列表
    comboBox.getItems().addAll("str1","str2","str3","str4","str5");
    ```
 
-* 设置可编辑==相较于ChoiceBox的特点==`comboBox.setEditable(true);`
+* 设置可编辑**相较于ChoiceBox的特点**`comboBox.setEditable(true);`
 
 * 设置提示文字`comboBox.setPromptText("请输入");`
 

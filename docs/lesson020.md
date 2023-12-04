@@ -25,7 +25,7 @@ title: TextFlow文本布局
 * 设置文本对齐方式`textFlow.setTextAlignment(TextAlignment.CENTER);`
 
 * 设置行间距`textFlow.setLineSpacing(50);`
-  ==textFlow特性放置到其他组件上会失去其特性，其无法监听到窗口大小的变化==
+  **textFlow特性放置到其他组件上会失去其特性，其无法监听到窗口大小的变化**
     
   ```java
   AnchorPane anchorPane = new AnchorPane(textFlow);  

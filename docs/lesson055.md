@@ -81,7 +81,7 @@ SimpleIntegerProperty y = new SimpleIntegerProperty(5);
 * 解绑`x.unbindBidirectional(y);`或`y.unbindBidirectional(x);`
   
 ## 案例
-1. 单向绑定实现按钮大小随界面大小改变而改变==使用prefWidthProperty，而不是widthProperty==
+1. 单向绑定实现按钮大小随界面大小改变而改变**使用prefWidthProperty，而不是widthProperty**
   
    ```java
    button.prefWidthProperty().bind(anchorPane.widthProperty());  
@@ -118,7 +118,7 @@ SimpleIntegerProperty y = new SimpleIntegerProperty(5);
    
    ![](../assets/VeryCapture_20220523094540.gif)
 
-3. 单向绑定，按钮位置随进度条改变==使用translateXProperty，而不是LayoutXProperty==
+3. 单向绑定，按钮位置随进度条改变**使用translateXProperty，而不是LayoutXProperty**
   
    ```java
    button.translateXProperty().bind(slider.valueProperty());

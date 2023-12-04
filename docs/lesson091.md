@@ -5,7 +5,7 @@ title: Alert弹窗
 
 # Alert弹窗
 
-* 创建Alert弹窗==类型决定弹窗内的按钮类型和图标，如果该alert中没有对应的按钮却给该类型的按钮设置了监听，则会报错NullPointerException==
+* 创建Alert弹窗**类型决定弹窗内的按钮类型和图标，如果该alert中没有对应的按钮却给该类型的按钮设置了监听，则会报错NullPointerException**
   
     ```java
     Alert alert = new Alert(Alert.AlertType.INFORMATION);

@@ -78,7 +78,7 @@ title: Image
   });
   ```
 
-* 加载进度通知==仅开启图片异步加载有效==
+* 加载进度通知**仅开启图片异步加载有效**
   
   ```java
   image.progressProperty().addListener(new ChangeListener<Number>() {  

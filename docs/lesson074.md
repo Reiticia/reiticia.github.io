@@ -6,7 +6,9 @@ title: 鼠标事件（拖拽）
 
 # 鼠标事件（拖拽）
 
-## 鼠标拖拽==在button1上点击(左中右键)后进行拖拽，拖拽区域没有限制==
+## 鼠标拖拽
+
+> 在button1上点击(左中右键)后进行拖拽，拖拽区域没有限制
 
 ```java
 button1.setOnMouseDragged(new EventHandler<MouseEvent>() {  

@@ -131,7 +131,7 @@ title: ListView（中）
   效果图
   ![](../assets/Pasted%20image%2020220603135224.png)
 
-* CheckBoxListCell（设置除了B默认选中）==使用此方法进行设置可以不用将listView设置为可编辑==
+* CheckBoxListCell（设置除了B默认选中）**使用此方法进行设置可以不用将listView设置为可编辑**
   
   ```java
   ObservableList<Data> observableList1 = FXCollections.observableArrayList(observableList.subList(0, observableList.size()));  

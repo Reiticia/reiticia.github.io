@@ -8,7 +8,7 @@ title: Canvas画布
 
 * 创建画布`Canvas canvas = new Canvas(600, 600);`
 
-* 获取画笔==画布内描述物体超出画布部分会被裁切==`GraphicsContext graphicsContext2D = canvas.getGraphicsContext2D();`
+* 获取画笔(画布内描述物体超出画布部分会被裁切)`GraphicsContext graphicsContext2D = canvas.getGraphicsContext2D();`
 
 * 设置画笔填充颜色`graphicsContext2D.setFill(Color.RED);`
 

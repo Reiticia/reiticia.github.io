@@ -21,7 +21,7 @@ title: PieChart饼状图
 
 * 指示线长度`chart.setLabelLineLength(100);`
 
-* 设置起始角度==未设置默认以向右射线顺时针分配区域，设置正数逆时针旋转，设置负数顺时针旋转==`chart.setStartAngle(90);
+* 设置起始角度(未设置默认以向右射线顺时针分配区域，设置正数逆时针旋转，设置负数顺时针旋转)`chart.setStartAngle(90);
 
 * 设置不显示指示线以及文本内容`chart.setLabelsVisible(false);`
 

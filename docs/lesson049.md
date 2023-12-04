@@ -63,7 +63,7 @@ title: ScrollBar、ScrollPane、Separator
 
 * 创建分隔符`Separator separator = new Separator();`
 
-* 设置宽高==此设置并不会改变分隔符的宽度和长度==
+* 设置宽高(此设置并不会改变分隔符的宽度和长度)
   
     ```java
     separator.setPrefWidth(300);  

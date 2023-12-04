@@ -22,7 +22,7 @@ title: Image的像素解析
 * 十六进制转十进制`Integer.parseInt("ff", 16)`
 * 十进制转十六进制`Integer.toHexString(255)`
 * 像素解析器操作，通过`getArgb`获取某个像素点的argb
-  1. 解析位置(2,0)的像素==返回16进制整数，格式为ARGB==
+  1. 解析位置(2,0)的像素**返回16进制整数，格式为ARGB**
     
      ```java
      int argb = pixelReader.getArgb(2, 0);   

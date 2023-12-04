@@ -31,7 +31,7 @@ title: ProgressBar和ProgressIndicator进度显示
     progressIndicator.setPrefHeight(10.0);
     ```
 
-* 设置不确定进度==默认==`progressBar.setProgress(ProgressBar.INDETERMINATE_PROGRESS);`
+* 设置不确定进度(默认)`progressBar.setProgress(ProgressBar.INDETERMINATE_PROGRESS);`
 
 ## 控制
 

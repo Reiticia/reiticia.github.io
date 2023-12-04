@@ -83,7 +83,7 @@ title: 可观察集合中的一些方法
     > c.wasUpdated() = true  
     > c b b   
 
-* 反例==下面例子证明：如果在创建可观察列表时没有指定回调函数callback，则当集合中存储的数据发生变化时，不会触发集合对应监视属性的监听方法==
+* 反例(下面例子证明：如果在创建可观察列表时没有指定回调函数callback，则当集合中存储的数据发生变化时，不会触发集合对应监视属性的监听方法)
   
     ```java
     ObservableList<SimpleStringProperty> list = FXCollections.observableArrayList();
