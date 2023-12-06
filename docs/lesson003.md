@@ -31,9 +31,9 @@ title: Stage窗口
     primaryStage.getHeight();
     ```
 
-* stage1.initOwner(stage); // 设置父窗口
+* 设置父窗口`stage1.initOwner(stage);` 
 
-* stage1.initModality(Modality.WINDOW_MODAL);// 设置模态窗口，该窗口没有关闭前点击stage（即父窗口）窗口无效
+* 设置模态窗口，该窗口没有关闭前点击stage（即父窗口）窗口无效`stage1.initModality(Modality.WINDOW_MODAL);`
 
     ```java
     primaryStage.heightProperty().addListener(new ChangeListener<Number>() {  

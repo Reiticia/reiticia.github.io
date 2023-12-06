@@ -32,7 +32,6 @@ title: MenuBar菜单栏及其子组件
 
 * 菜单事件
 
-    
     ```java
     // 菜单隐藏完毕触发
     MENU1.setOnHidden(event -> System.out.println("MENU1.setOnHidden"));  

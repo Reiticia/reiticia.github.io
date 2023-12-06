@@ -36,6 +36,7 @@ title: Stage窗口（续）
     ```
 
 * 窗口样式
+
      ```java
     // 默认样式  
     stage.initStyle(StageStyle.DECORATED);

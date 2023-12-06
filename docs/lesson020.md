@@ -44,13 +44,13 @@ title: TextFlow文本布局
   
   ![](../assets/Pasted%20image%2020220513091010.png)
 
-解决方法：对父组件监视属性绑定监听器
-
-```java
-anchorPane.widthProperty().addListener((observable, oldValue, newValue) -> {  
-  textFlow.setPrefWidth(newValue.doubleValue()-textFlow.getLayoutX());  
-});
-anchorPane.heightProperty().addListener((observable, oldValue, newValue) -> {  
-  textFlow.setPrefHeight(newValue.doubleValue()-textFlow.getLayoutY());  
-});
-```
+  解决方法：对父组件监视属性绑定监听器
+  
+  ```java
+  anchorPane.widthProperty().addListener((observable, oldValue, newValue) -> {  
+    textFlow.setPrefWidth(newValue.doubleValue()-textFlow.getLayoutX());  
+  });
+  anchorPane.heightProperty().addListener((observable, oldValue, newValue) -> {  
+    textFlow.setPrefHeight(newValue.doubleValue()-textFlow.getLayoutY());  
+  });
+  ```
