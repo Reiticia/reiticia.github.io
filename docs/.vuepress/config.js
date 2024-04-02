@@ -6,7 +6,7 @@ export default defineUserConfig({
     description: 'Aimls JavaFX系列视频学习笔记',
     port: 8080,
     host: '0.0.0.0',
-    base: '/javafx-study/',
+    base: '/',
     head: [["link", { rel: "icon", href: "https://avatars.githubusercontent.com/u/149501682?v=4" }]],
     theme: defaultTheme({
         docsBranch: 'main',
