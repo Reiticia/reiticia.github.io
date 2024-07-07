@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2e21fe77","path":"/lesson047.html","title":"SplitPane分割面板","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"SplitPane分割面板"},"headers":[],"git":{"updatedTime":1698289825000,"contributors":[{"name":"reine-ishyanami","email":"2402979195@qq.com","commits":2}]},"filePathRelative":"lesson047.md"}');export{e as data};

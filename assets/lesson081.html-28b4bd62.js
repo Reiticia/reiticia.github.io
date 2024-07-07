@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-1104507e","path":"/lesson081.html","title":"自定义拖拽类型","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"自定义拖拽类型"},"headers":[],"git":{"updatedTime":1698298115000,"contributors":[{"name":"reine-ishyanami","email":"2402979195@qq.com","commits":2}]},"filePathRelative":"lesson081.md"}');export{e as data};

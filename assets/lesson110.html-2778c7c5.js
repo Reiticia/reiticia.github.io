@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2942e58c","path":"/lesson110.html","title":"多任务Service","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"多任务Service"},"headers":[],"git":{"updatedTime":1698305069000,"contributors":[{"name":"reine-ishyanami","email":"2402979195@qq.com","commits":2}]},"filePathRelative":"lesson110.md"}');export{e as data};

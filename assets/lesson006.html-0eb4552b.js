@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-58d438d4","path":"/lesson006.html","title":"Screen类","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"Screen类"},"headers":[],"git":{"updatedTime":1698227734000,"contributors":[{"name":"reine-ishyanami","email":"2402979195@qq.com","commits":2}]},"filePathRelative":"lesson006.md"}');export{e as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-28cd0396","path":"/lesson125.html","title":"Shear斜切","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"Shear斜切"},"headers":[],"git":{"updatedTime":1698305069000,"contributors":[{"name":"reine-ishyanami","email":"2402979195@qq.com","commits":2}]},"filePathRelative":"lesson125.md"}');export{e as data};

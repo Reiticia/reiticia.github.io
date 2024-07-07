@@ -1,0 +1,44 @@
+import{_ as n,o as s,c as a,a as e}from"./app-d6f5df65.js";const t={},p=e(`<h1 id="鼠标事件-触发事件" tabindex="-1"><a class="header-anchor" href="#鼠标事件-触发事件" aria-hidden="true">#</a> 鼠标事件（触发事件）</h1><ul><li><p>自定义鼠标事件</p><div class="language-java line-numbers-mode" data-ext="java"><pre class="language-java"><code><span class="token keyword">class</span> <span class="token class-name">MyEvent</span> <span class="token keyword">extends</span> <span class="token class-name">MouseEvent</span> <span class="token keyword">implements</span> <span class="token class-name">EventHandler</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">MouseEvent</span><span class="token punctuation">&gt;</span></span> <span class="token punctuation">{</span>  
+    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token class-name">Node</span> node<span class="token punctuation">;</span>  
+
+    <span class="token keyword">public</span> <span class="token class-name">MyEvent</span><span class="token punctuation">(</span><span class="token class-name">Node</span> node<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+        <span class="token comment">/*  
+      eventType – 事件的类型  
+      x - 相对于场景的 x        y - 相对于场景的 y        screenX – 相对于屏幕的 x 坐标  
+      screenY - 相对于屏幕的 y 坐标  
+      button – 使用的鼠标按钮  
+      clickCount – 点击次数  
+      shiftDown – 如果按下 shift 修饰符，则为 true        
+      controlDown – 如果按下控制修饰符，则为 true        
+      altDown – 如果按下了 alt 修饰符，则为 true        
+      metaDown – 如果按下 meta 修饰符，则为 true        
+      primaryButtonDown - 如果主按钮被按下，则为 true       
+      middleButtonDown - 如果按下了中间按钮，则为 true        
+      secondaryButtonDown – 如果辅助按钮被按下，则为 true       
+      synthesized – 如果这个事件是合成的  
+      popupTrigger – 此事件是否表示当前平台的弹出触发器  
+      StillSincePress – 见isStillSincePress()  
+      pickResult - 选择结果。可以为空，在这种情况下，将根据场景坐标构造没有任何其他值的 2D 拾取结果  
+          target - 选择的目标（在场景的情况下为空）  
+          sceneX - 场景 X 坐标  
+          sceneY - 场景 Y 坐标  
+      */</span>        
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token class-name">MouseEvent</span><span class="token punctuation">.</span><span class="token constant">MOUSE_CLICKED</span><span class="token punctuation">,</span>  
+              <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span>  
+              <span class="token class-name">MouseButton</span><span class="token punctuation">.</span><span class="token constant">PRIMARY</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span>  
+              <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+              <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span>                
+              <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span>                
+              <span class="token keyword">new</span> <span class="token class-name">PickResult</span><span class="token punctuation">(</span>node<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+        <span class="token keyword">this</span><span class="token punctuation">.</span>node <span class="token operator">=</span> node<span class="token punctuation">;</span>  
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token class-name">ConsoleColor</span><span class="token punctuation">.</span><span class="token constant">GREEN</span> <span class="token operator">+</span> <span class="token string">&quot;MyEvent构造方法&quot;</span> <span class="token operator">+</span> <span class="token class-name">ConsoleColor</span><span class="token punctuation">.</span><span class="token constant">RESET</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span>  
+
+    <span class="token annotation punctuation">@Override</span>  
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">handle</span><span class="token punctuation">(</span><span class="token class-name">MouseEvent</span> event<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>node <span class="token keyword">instanceof</span> <span class="token class-name">Text</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token class-name">ConsoleColor</span><span class="token punctuation">.</span><span class="token constant">YELLOW</span> <span class="token operator">+</span> <span class="token string">&quot;((Text) node).getText() = &quot;</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token class-name">Text</span><span class="token punctuation">)</span> node<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getText</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token class-name">ConsoleColor</span><span class="token punctuation">.</span><span class="token constant">RESET</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+        <span class="token punctuation">}</span>  
+    <span class="token punctuation">}</span>  
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li><p>触发事件<code>Event.fireEvent(text, myEvent);</code></p></li><li><p>事件拷贝<code>MouseEvent mouseEvent = event.copyFor(button2, button2);</code></p></li><li><p>拷贝事件时重新指定事件类型（鼠标拖动事件）<code>MouseEvent mouseEvent1 = event.copyFor(button2, button2, MouseEvent.MOUSE_DRAGGED);</code></p></li></ul>`,2),o=[p];function c(l,i){return s(),a("div",null,o)}const k=n(t,[["render",c],["__file","lesson076.html.vue"]]);export{k as default};

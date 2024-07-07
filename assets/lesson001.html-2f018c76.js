@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-504bfdb9","path":"/lesson001.html","title":"JavaFX入门程序","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"JavaFX入门程序"},"headers":[],"git":{"updatedTime":1698231628000,"contributors":[{"name":"reine-ishyanami","email":"2402979195@qq.com","commits":3}]},"filePathRelative":"lesson001.md"}');export{a as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-200e5777","path":"/lesson201.html","title":"MediaPlayer","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"MediaPlayer"},"headers":[],"git":{"updatedTime":1698308862000,"contributors":[{"name":"reine-ishyanami","email":"2402979195@qq.com","commits":2}]},"filePathRelative":"lesson201.md"}');export{e as data};

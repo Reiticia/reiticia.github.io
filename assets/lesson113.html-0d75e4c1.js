@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-1f05d1d2","path":"/lesson113.html","title":"fxml的Controller","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"fxml的Controller"},"headers":[],"git":{"updatedTime":1698305069000,"contributors":[{"name":"reine-ishyanami","email":"2402979195@qq.com","commits":2}]},"filePathRelative":"lesson113.md"}');export{e as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-e50a1f8a","path":"/lesson142.html","title":"Color","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"Color"},"headers":[],"git":{"updatedTime":1698305069000,"contributors":[{"name":"reine-ishyanami","email":"2402979195@qq.com","commits":2}]},"filePathRelative":"lesson142.md"}');export{e as data};

@@ -1,0 +1,1 @@
+import{_ as s,o as c,c as t,b as e,d as n}from"./app-d6f5df65.js";const r={},a=e("h1",{id:"scenebuilder使用",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#scenebuilder使用","aria-hidden":"true"},"#"),n(" SceneBuilder使用")],-1),o=[a];function d(_,l){return c(),t("div",null,o)}const h=s(r,[["render",d],["__file","lesson117.html.vue"]]);export{h as default};
