@@ -1,0 +1,1 @@
+import{_ as a,o as s,c as t,b as e,d as n}from"./app-d6f5df65.js";const o={},c=e("h1",{id:"affine仿射",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#affine仿射","aria-hidden":"true"},"#"),n(" Affine仿射")],-1),r=[c];function _(d,f){return s(),t("div",null,r)}const l=a(o,[["render",_],["__file","lesson126.html.vue"]]);export{l as default};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2a81dc35","path":"/lesson126.html","title":"Affine仿射","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"Affine仿射"},"headers":[],"git":{"updatedTime":1698305069000,"contributors":[{"name":"reine-ishyanami","email":"2402979195@qq.com","commits":2}]},"filePathRelative":"lesson126.md"}');export{e as data};

@@ -1,0 +1,1 @@
+import{_ as a,o as s,c as t,b as e,d as o}from"./app-d6f5df65.js";const c={},n=e("h1",{id:"javafx数据可视化",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#javafx数据可视化","aria-hidden":"true"},"#"),o(" JavaFX数据可视化")],-1),r=[n];function _(d,l){return s(),t("div",null,r)}const f=a(c,[["render",_],["__file","lesson136.html.vue"]]);export{f as default};
